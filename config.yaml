@@ -21,7 +21,7 @@ carpentry_description: 'Learning MATLAB is a valuable asset for enhancing resear
 title: 'Introduction to Matlab 1'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: '2024-09-12 # FIXME
+created: '2024-09-12'
 
 # Comma-separated list of keywords for the lesson
 keywords: 'matlab, data, introduction'
