@@ -8,14 +8,7 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
-# 
-# This option supports custom types so lessons can be branded
-# and themed with your own logo and alt-text (see `carpentry_description`)
-# See https://carpentries.github.io/sandpaper-docs/editing.html#adding-a-custom-logo
 carpentry: 'university_of_sheffield'
-
-# Alt-text description of the lesson.
-carpentry_description: 'Learning MATLAB is a valuable asset for enhancing research due to its specialised capabilities for data analysis, numerical simulation, and algorithm development. Proficiency in MATLAB equips researchers with a versatile skill set applicable across disciplines, fostering innovation and efficient problem-solving. Its industry relevance also opens doors to diverse career opportunities.'
 
 # Overall title for pages.
 title: 'Introduction to Matlab 1'
@@ -30,7 +23,7 @@ keywords: 'matlab, data, introduction'
 # possible values: pre-alpha, alpha, beta, stable
 life_cycle: 'pre-alpha'
 
-# License of the lesson
+# License of the lesson materials (recommended CC-BY 4.0)
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
@@ -67,6 +60,7 @@ contact: 'research-it@sheffield.ac.uk'
 # Order of episodes in your lesson
 episodes: 
 - introduction.md
+- what-is-matlab.md
 
 # Information for Learners
 learners: 
@@ -81,5 +75,11 @@ profiles:
 #
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
-varnish: RSE-Sheffield/uos-varnish
 
+
+carpentry_description: Learning MATLAB is a valuable asset for enhancing research
+  due to its specialised capabilities for data analysis, numerical simulation, and
+  algorithm development. Proficiency in MATLAB equips researchers with a versatile
+  skill set applicable across disciplines, fostering innovation and efficient problem-solving.
+  Its industry relevance also opens doors to diverse career opportunities.
+varnish: RSE-Sheffield/uos-varnish
