@@ -61,6 +61,7 @@ contact: 'research-it@sheffield.ac.uk'
 episodes: 
 - introduction.md
 - what-is-matlab.md
+- matlab-layout.md
 
 # Information for Learners
 learners: 
