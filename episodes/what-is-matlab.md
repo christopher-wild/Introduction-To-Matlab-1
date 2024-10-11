@@ -1,5 +1,5 @@
 ---
-title: 'what-is-matlab'
+title: 'What is MATLAB?'
 teaching: 10
 exercises: 2
 ---
@@ -8,6 +8,7 @@ exercises: 2
 
 - What does MATLAB do?
 - How can MATLAB help my Research?
+- Is MATLAB the best tool for my Research project?
 
 :::
 
@@ -15,7 +16,7 @@ exercises: 2
 
 - Explain what tasks MATLAB is well suited for
 - Explain how MATLAB compares to other common tools (Python, R)
-
+- Understand the tradeoffs of choosing MATLAB as a tool
 :::
 
 ## Introduction
@@ -25,7 +26,7 @@ What is MATLAB?
 MATLAB is a high-level propriety programming language and interactive environment primarily designed for numerical computing, data analysis, and scientific visualization. It provides a comprehensive suite of tools for tasks such as matrix manipulation, algorithm development, data plotting, and interfacing with other programming languages. Its user-friendly interface and extensive library of functions make it a popular choice among researchers, engineers, and scientists.
 
 
-::: callout
+:::: callout
 ### Propriety
 
 MATLAB is a propriety language, this means it is owned by a specific company MathWorks.
@@ -34,10 +35,27 @@ and the software is licensed for use under specific terms and conditions. There 
 
 :::
 
+::: challenge
+### Discuss pros & cons
+Discuss or think about what might be some of the advantages and disadvantages of software being owned by a single company.
+
+::: solution
+
+| Feature | Proprietary | Open Source |
+|---|---|---|
+| **Cost** | Individual MATLAB license is £800/year  | Nearly always free |
+| **Documentation** | Single documentation site with everything you need to know | Can be spread around many site, different communities contributing different documentation |
+| **Support** | Single company to ask support queries and report bugs to | Reliant on a spread out community for support with no single best place to go|
+| **Adoption** | Typically used in large companies and academia due to cost | Widely adopted across all parts of the community |
+
+:::
+
+::::
+
 ## Why MATLAB?
 
 While many research tools can accomplish tasks similar to MATLAB, understanding MATLAB's strengths and weaknesses in comparison is important.
-Two of the main alternative languages you may have heard of are [Python](https://www.python.org/) and [R](https://www.r-project.org). These are often compared because all 3 languages are often used for 
+Two of the main alternative languages you may have heard of are [Python](https://www.python.org/) and [R (r-project)](https://www.r-project.org). These are often compared because all 3 languages are often used for 
 
 ::: spoiler
 ### High-Level and Low-Level
@@ -45,63 +63,14 @@ Low-level code languages are closer to the machine's language, requiring more pr
 
 MATLAB is considered on the high-level end of languages, making it relatively easy to read and work with.
 
+
 :::
  
 
-::::::::::::::::::::::::::::::::::::: challenge 
+::: keypoints 
 
-## Challenge 1: Can you do it?
+- MATLAB is used in many fields and can be used to analysis, process, model and much more
+- 
 
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
-
-:::::::::::::::::::::::: solution 
-
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
-
-:::::::::::::::::::::::::::::::::
-
-
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can use pandoc markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
