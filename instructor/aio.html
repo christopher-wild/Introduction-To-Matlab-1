@@ -258,6 +258,30 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="what-is-matlab.html">2. What is MATLAB?</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="matlab-layout.html">3. Matlab Layout</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -497,6 +521,390 @@ locally</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</section></section><section id="aio-what-is-matlab"><p>Content from <a href="what-is-matlab.html">What is MATLAB?</a></p>
+<hr>
+<p>Last updated on 2024-10-11 |
+
+        <a href="https://github.com/christopher-wild/Matlab_Course_101/edit/main/episodes/what-is-matlab.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What does MATLAB do?</li>
+<li>How can MATLAB help my Research?</li>
+<li>Is MATLAB the best tool for my Research project?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Explain what tasks MATLAB is well suited for</li>
+<li>Explain how MATLAB compares to other common tools (Python, R)</li>
+<li>Understand the tradeoffs of choosing MATLAB as a tool</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
+<hr class="half-width">
+<p>What is MATLAB?</p>
+<p>MATLAB is a high-level propriety programming language and interactive
+environment primarily designed for numerical computing, data analysis,
+and scientific visualization. It provides a comprehensive suite of tools
+for tasks such as matrix manipulation, algorithm development, data
+plotting, and interfacing with other programming languages. Its
+user-friendly interface and extensive library of functions make it a
+popular choice among researchers, engineers, and scientists.</p>
+<div id="propriety" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="propriety" class="callout-inner">
+<h3 class="callout-title">Propriety</h3>
+<div class="callout-content">
+<p>MATLAB is a propriety language, this means it is owned by a specific
+company MathWorks. Therefore it’s source code is not public ally
+available (opposite of open-source) and the software is licensed for use
+under specific terms and conditions. There are many pros and cons of
+working with propriety software</p>
+</div>
+</div>
+</div>
+<div id="discuss-pros-cons" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discuss-pros-cons" class="callout-inner">
+<h3 class="callout-title">Discuss pros &amp; cons</h3>
+<div class="callout-content">
+<p>Discuss or think about what might be some of the advantages and
+disadvantages of software being owned by a single company.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr class="header">
+<th>Feature</th>
+<th>Proprietary</th>
+<th>Open Source</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cost</strong></td>
+<td>Individual MATLAB license is £800/year</td>
+<td>Nearly always free</td>
+</tr>
+<tr class="even">
+<td><strong>Documentation</strong></td>
+<td>Single documentation site with everything you need to know</td>
+<td>Can be spread around many site, different communities contributing
+different documentation</td>
+</tr>
+<tr class="odd">
+<td><strong>Support</strong></td>
+<td>Single company to ask support queries and report bugs to</td>
+<td>Reliant on a spread out community for support with no single best
+place to go</td>
+</tr>
+<tr class="even">
+<td><strong>Adoption</strong></td>
+<td>Typically used in large companies and academia due to cost</td>
+<td>Widely adopted across all parts of the community</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="why-matlab">Why MATLAB?<a class="anchor" aria-label="anchor" href="#why-matlab"></a>
+</h2>
+<hr class="half-width">
+<p>While many research tools can accomplish tasks similar to MATLAB,
+understanding MATLAB’s strengths and weaknesses in comparison is
+important. Two of the main alternative languages you may have heard of
+are <a href="https://www.python.org/" class="external-link">Python</a> and <a href="https://www.r-project.org" class="external-link">R (r-project)</a>. These are often
+compared because all 3 languages are often used for</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> High-Level and Low-Level </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
+<p>Low-level code languages are closer to the machine’s language,
+requiring more precise instructions for the computer to understand. They
+offer greater control over hardware but are more complex to write and
+debug. High-level code languages are more abstract and human-readable,
+translating complex instructions into simpler machine code. They are
+easier to learn and maintain but may sacrifice some performance
+efficiency compared to low-level languages.</p>
+<p>MATLAB is considered on the high-level end of languages, making it
+relatively easy to read and work with.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>MATLAB is used in many fields and can be used to analysis, process,
+model and much more</li>
+<li>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-matlab-layout"><p>Content from <a href="matlab-layout.html">Matlab Layout</a></p>
+<hr>
+<p>Last updated on 2024-10-11 |
+
+        <a href="https://github.com/christopher-wild/Matlab_Course_101/edit/main/episodes/matlab-layout.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What do all the different parts of the MATLAB interface do?</li>
+<li>What features are important to get started in MATLAB?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Learn to navigate and adjust the MATLAB interface</li>
+<li>Understand the difference between the command window and the
+editor</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
+<hr class="half-width">
+<p>MATLAB as a language is mainly interacted with through the official
+MATLAB application. Before we press on with learning, writing and
+running MATLAB this episode will quickly run through the various parts
+of MATLAB and help you understand where and how you should write
+MATLAB.</p>
+<p>Below is an annotated diagram what of the MATLAB application looks
+like.</p>
+<div id="layout" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="layout" class="callout-inner">
+<h3 class="callout-title">Layout</h3>
+<div class="callout-content">
+<p>Don’t worry if your layout does not match the one in the diagram. The
+MATLAB application is very customizable and you can drag and drop the
+various windows around. There are a few preset layouts available in the
+view tab at the top</p>
+</div>
+</div>
+</div>
+<p>Each number on the diagram describes:</p>
+<ol style="list-style-type: decimal">
+<li>Menu Bar - This bar functions much like the bars at the top of many
+Microsoft and Google applications you may be familiar with, it has tabs
+with different options in. Throughout this course we will be exploring
+some of these tabs in more detail.</li>
+<li>Explorer - Here you can explore the files on your computer much like
+the explorer on your computer. The folder currently showing is referred
+to as the ‘Current Folder’ or ‘Working Directory’, this is where MATLAB
+will first search for files.</li>
+<li>Editor - This is where you will edit MATLAB code files</li>
+<li>Command Window - One off MATLAB commands can be executed here</li>
+<li>Workspace - You will be able to see any variables that are currently
+in memory here</li>
+</ol>
+<p>If any of this isn’t clear again don’t worry! This course will
+further explore and clarify all of these tools</p>
+<figure><img src="../fig/blank_matlab.png" alt="A screenshot of the MATLAB application with red numbers annotating the major areas of the application which are detailed in the main body" class="figure mx-auto d-block"><div class="figcaption">Annotated MATLAB Application</div>
+</figure></section><section><h2 class="section-heading" id="editor-vs-command-window">Editor VS Command Window<a class="anchor" aria-label="anchor" href="#editor-vs-command-window"></a>
+</h2>
+<hr class="half-width">
+<p>You can write and run MATLAB code in both the command window and the
+editor so understanding the purpose and differences of them is
+important.</p>
+<div class="section level3">
+<h3 id="command-window">Command Window<a class="anchor" aria-label="anchor" href="#command-window"></a>
+</h3>
+<p>Starting with the command window, here you write a single line of
+MATLAB code, hit enter and MATLAB will run the code!</p>
+<div id="discussion1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>What is the output of this command?</p>
+<pre><code><span><span class="fl">13</span> <span class="op">*</span> <span class="fl">8</span></span></code></pre>
+</div>
+</div>
+</div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>Inline instructor notes can help inform instructors of timing
+challenges associated with the lessons. They appear in the “Instructor
+View”</p>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge-1-can-you-do-it" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-1-can-you-do-it" class="callout-inner">
+<h3 class="callout-title">Challenge 1: Can you do it?</h3>
+<div class="callout-content">
+<p>What is the output of this command?</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
+<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?</h3>
+<div class="callout-content">
+
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>You can add a line with at least three colons and a
+<code>solution</code> tag.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
+</h2>
+<hr class="half-width">
+<p>You can use pandoc markdown for static figures with the following
+syntax:</p>
+<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
+<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
+</figure></section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
+</h2>
+<hr class="half-width">
+<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
+create dynamic reports with {knitr}, so we now use mathjax to describe
+this:</p>
+<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
+<p>Cool, right?</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>Use <code>.md</code> files for episodes when you want static
+content</li>
+<li>Use <code>.Rmd</code> files for episodes when you need to generate
+output</li>
+<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
+with your lesson</li>
+<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
+locally</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
 </section></section>
 </div>
     </main>
@@ -531,9 +939,9 @@ any links that you are not going to use.
 
 
         <!--<p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY 4.0</a> by <a href="https://carpentries.org/">The Carpentries</a></p>-->
-        <!--<p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.7">sandpaper (0.16.7)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.6">pegboard (0.7.6)</a>, and <a href="https://github.com/RSE-Sheffield/uos-varnish/tree/c0863ca1d31a1bc7e8cbafebde072841ba3142f9">varnish (1.0.4)</a></p>-->
+        <!--<p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.8">sandpaper (0.16.8)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.6">pegboard (0.7.6)</a>, and <a href="https://github.com/RSE-Sheffield/uos-varnish/tree/c0863ca1d31a1bc7e8cbafebde072841ba3142f9">varnish (1.0.4)</a></p>-->
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.7" class="external-link">sandpaper (0.16.7)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.8" class="external-link">sandpaper (0.16.8)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.7.6" class="external-link">pegboard (0.7.6)</a>,
       and <a href="https://github.com/RSE-Sheffield/uos-varnish/tree/c0863ca1d31a1bc7e8cbafebde072841ba3142f9" class="external-link">varnish (1.0.4) [UoS fork]</a>.</p>
 			</div>
@@ -558,8 +966,8 @@ any links that you are not going to use.
   "url": "https://christopher-wild.github.io/Matlab_Course_101/instructor/aio.html",
   "identifier": "https://christopher-wild.github.io/Matlab_Course_101/instructor/aio.html",
   "dateCreated": "2024-09-12",
-  "dateModified": "2024-10-08",
-  "datePublished": "2024-10-08"
+  "dateModified": "2024-10-11",
+  "datePublished": "2024-10-11"
 }
 
   </script><script>
