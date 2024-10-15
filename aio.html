@@ -281,6 +281,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="variables-and-dimensions.html">4. Variables and Dimensions</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -506,7 +518,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-what-is-matlab"><p>Content from <a href="what-is-matlab.html">What is MATLAB?</a></p>
 <hr>
-<p>Last updated on 2024-10-11 |
+<p>Last updated on 2024-10-15 |
 
         <a href="https://github.com/christopher-wild/Matlab_Course_101/edit/main/episodes/what-is-matlab.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -534,7 +546,7 @@ any links that you are not going to use.
 <ul>
 <li>Explain what tasks MATLAB is well suited for</li>
 <li>Explain how MATLAB compares to other common tools (Python, R)</li>
-<li>Understand the tradeoffs of choosing MATLAB as a tool</li>
+<li>Understand the trade-offs of choosing MATLAB as a tool</li>
 </ul>
 </div>
 </div>
@@ -676,7 +688,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-matlab-layout"><p>Content from <a href="matlab-layout.html">Matlab Layout</a></p>
 <hr>
-<p>Last updated on 2024-10-11 |
+<p>Last updated on 2024-10-15 |
 
         <a href="https://github.com/christopher-wild/Matlab_Course_101/edit/main/episodes/matlab-layout.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -758,17 +770,36 @@ further explore and clarify all of these tools</p>
 <p>You can write and run MATLAB code in both the command window and the
 editor so understanding the purpose and differences of them is
 important.</p>
-<div class="section level3">
-<h3 id="command-window">Command Window<a class="anchor" aria-label="anchor" href="#command-window"></a>
-</h3>
-<p>Starting with the command window, here you write a single line of
-MATLAB code, hit enter and MATLAB will run the code!</p>
-<div id="discussion1" class="callout discussion">
+<table class="table">
+<thead><tr class="header">
+<th>Command Window</th>
+<th>Editor</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Quick calculations</td>
+<td>Creating and editing persistent scripts</td>
+</tr>
+<tr class="even">
+<td>Testing</td>
+<td>Reading and using others code</td>
+</tr>
+<tr class="odd">
+<td>Interactive exploration</td>
+<td>Creating functions</td>
+</tr>
+<tr class="even">
+<td>Debugging</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div id="challenge-1-using-the-command-window" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="challenge-1-using-the-command-window" class="callout-inner">
+<h3 class="callout-title">Challenge 1: Using the command window</h3>
 <div class="callout-content">
 <p>What is the output of this command?</p>
 <pre><code><span><span class="fl">13</span> <span class="op">*</span> <span class="fl">8</span></span></code></pre>
@@ -776,6 +807,137 @@ MATLAB code, hit enter and MATLAB will run the code!</p>
 </div>
 </div>
 
+<div id="challenge-2-using-the-editor" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-2-using-the-editor" class="callout-inner">
+<h3 class="callout-title">Challenge 2: Using the editor</h3>
+<div class="callout-content">
+<p>Press ‘New’ at the top left and type the following into your editor.
+Then press ‘Run’ in the EDITOR tab at the top.</p>
+<pre><code><span><span class="va">b</span> <span class="op">=</span> <span class="fl">136</span> <span class="op">/</span> <span class="fl">8</span></span></code></pre>
+<ol style="list-style-type: decimal">
+<li>What do you have to do in order for the code to run?</li>
+<li>What is the output?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li><p>The editor modifies and runs a MATLAB file (m-file), so in order
+to run what is in the editor you will be required to create and save a
+file.</p></li>
+<li><p>17</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<p>As you saw in the challenge above, using the command window requires
+you to create and save a file with the extension <code>.m</code>. This
+means that when you next come to do your analysis, processing, etc. you
+can reopen this file and work from it again.</p>
+<div id="saving-your-work" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="saving-your-work" class="callout-inner">
+<h3 class="callout-title">Saving your work</h3>
+<div class="callout-content">
+<p>Unlike the editor, any work done in the command window is not saved!
+This means that if you close MATLAB or your computer this work will be
+lost. Hence why you should use it only for quick temporary tasks</p>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>The MATLAB interface is very customisable, adjust it to suit
+you</li>
+<li>Use the command window for quick tasks like exploring data, testing,
+etc.</li>
+<li>Use the editor for developing code you want to persist between
+sessions</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-variables-and-dimensions"><p>Content from <a href="variables-and-dimensions.html">Variables and Dimensions</a></p>
+<hr>
+<p>Last updated on 2024-10-15 |
+
+        <a href="https://github.com/christopher-wild/Matlab_Course_101/edit/main/episodes/variables-and-dimensions.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How can I store and work on data?</li>
+<li>What does MATLAB assume about your data?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Explain how to use markdown with the new lesson template</li>
+<li>Demonstrate how to include pieces of code, figures, and nested
+challenge blocks</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
+<hr class="half-width">
+<p>This is a lesson created via The Carpentries Workbench. It is written
+in <a href="https://pandoc.org/MANUAL.html" class="external-link">Pandoc-flavored Markdown</a>
+for static files (with extension <code>.md</code>) and <a href="https://rmarkdown.rstudio.com/" class="external-link">R Markdown</a> for dynamic files
+that can render code into output (with extension <code>.Rmd</code>).
+Please refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
+Carpentries Workbench</a> for full documentation.</p>
+<p>What you need to know is that there are three sections required for a
+valid Carpentries lesson template:</p>
+<ol style="list-style-type: decimal">
+<li>
+<code>questions</code> are displayed at the beginning of the episode
+to prime the learner for the content.</li>
+<li>
+<code>objectives</code> are the learning objectives for an episode
+displayed with the questions.</li>
+<li>
+<code>keypoints</code> are displayed at the end of the episode to
+reinforce the objectives.</li>
+</ol>
 <div id="challenge-1-can-you-do-it" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -784,7 +946,7 @@ MATLAB code, hit enter and MATLAB will run the code!</p>
 <h3 class="callout-title">Challenge 1: Can you do it?</h3>
 <div class="callout-content">
 <p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb2">
+<div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -829,7 +991,6 @@ MATLAB code, hit enter and MATLAB will run the code!</p>
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
-</div>
 </div>
 </div>
 </div>
@@ -934,8 +1095,8 @@ any links that you are not going to use.
   "url": "https://christopher-wild.github.io/Matlab_Course_101/aio.html",
   "identifier": "https://christopher-wild.github.io/Matlab_Course_101/aio.html",
   "dateCreated": "2024-09-12",
-  "dateModified": "2024-10-11",
-  "datePublished": "2024-10-11"
+  "dateModified": "2024-10-15",
+  "datePublished": "2024-10-15"
 }
 
   </script><script>
