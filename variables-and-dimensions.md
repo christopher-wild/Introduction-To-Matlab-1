@@ -8,40 +8,73 @@ exercises: 2
 
 - How can I store and work on data?
 - What does MATLAB assume about your data?
+- How can I handle data of 2, 3 or more dimensions?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Understand what a Variable is and how MATLAB handles them
+- Learn about slicing and how we can create variables of various dimensions
+- Briefly review data types and why they aren't important in MATLAB
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown][pandoc] for static files (with extension `.md`) and
-[R Markdown][r-markdown] for dynamic files that can render code into output
-(with extension `.Rmd`). Please refer to the [Introduction to The Carpentries
-Workbench][carpentries-workbench] for full documentation.
+When programming there are many occasions where you will want to be able to access some data, for example you may want to load in a data set from online, load data from an sensor in the field or store the results of a calculation. How we store and refer to data in programming is a variable.
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson template:
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+## Variables
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+A variable in MATLAB is made of 2 parts, a name and a value. The name is what we use to refer to a variable and the value is the number, word, or item that is stored in it. 
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+The value of a variable in MATLAB can be many things! Some examples are
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+| Variable Type | Example Value |
+|---|---|
+|Integer| 1, 2, 3|
+|Double| 1.23, 4.56|
+|Character| A, b, c|
+|String| "hello"|
+|Matrix| [1 2 3; 4 5 6]|
+|Logical| True, False|
+
+## Workspace
+
+As mentioned in the previous episode, MATLAB has a section called the workspace, this is where you can view what Variables are in-memory. The most simple way of creating a variable is with the '=' symbol, for example:
+```
+my_variable = 5
+```
+will create a variable with the name my_variable and a value of 5
+
+::: spoiler
+### Memory
+
+MATLAB (like most programming languages), holds variables in-memory. This means they are stored on your computers RAM rather than your hard drive. This allows for fast access and processing, however RAM is wiped when your computer turns off so your workspace will be deleted when you close MATLAB or your computer.
+:::
+
+::: challenge
+  1. Create a variable called A with a value of 3: `A = 3`
+  
+  2. Create a variable called B with a value of hello: `B = 'hello'`
+  
+  3. Create a variable called a with the value of C: `a = 'C'`
+  
+  4. Customise your workspace and add the extra columns Size, Bytes and Class, this can be done by right clicking the top of the workspace
+  
+::: solution
+  Your workspace should look like this! We suggest customising the workspace columns just as an example of what is possible. 
+![](fig/workspace.png){alt="A screenshot of the MATLAB workspace with 3 variables in it from the challenge"}
+:::
+:::
+
+::: spoiler
+### Data Types
+You may notice in the previous solution there is a type called a 'double'. MATLAB is whats known as a dynamically typed language, which is also called the fun duck typing. This is based off the saying 'if it walks like a duck and quacks like a duck it's probably a duck'. In programming terms this means that when you make a variable MATLAB has a look at it and assumes what type it is based on how it looks. Other languages like C++ require you to explicitly tell the program what type every variable is.
+
+For you as a user, this means that you don't have to really know or pay attention to data types! However it is worth knowing they exist as if you get more advanced you may want to manipulate them to optimise your algorithms or some other advanced use cases.
+:::
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
