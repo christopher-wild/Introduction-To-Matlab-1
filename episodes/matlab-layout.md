@@ -47,13 +47,19 @@ If any of this isn't clear again don't worry! This course will further explore a
 
 ## Editor VS Command Window
 
-You can write and run MATLAB code in both the command window and the editor so understanding the purpose and differences of them is important. 
+You can write and run MATLAB code in both the command window and the editor so understanding the purpose and differences of them is important.
 
-### Command Window
+| Command Window | Editor |
+|---|---|
+| Quick calculations | Creating and editing persistent scripts |
+| Testing | Reading and using others code |
+| Interactive exploration | Creating functions |
+| Debugging | |
 
-Starting with the command window, here you write a single line of MATLAB code, hit enter and MATLAB will run the code!
+
 
 ::: challenge
+### Challenge 1: Using the command window
 
 What is the output of this command?
 ```
@@ -61,67 +67,42 @@ What is the output of this command?
 ```
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+::: instructor
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+May be worth explaining that '*' is used for multiplication in many programming languages and '/' for divide
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::: challenge 
+::: challenge
+### Challenge 2: Using the editor
 
-## Challenge 1: Can you do it?
+Press 'New' at the top left and type the following into your editor. Then press 'Run' in the EDITOR tab at the top.
 
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
+```
+b = 136 / 8
 ```
 
-:::::::::::::::::::::::: solution 
+1. What do you have to do in order for the code to run?
+2. What is the output?
 
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
+::: solution
 
-:::::::::::::::::::::::::::::::::
+1. The editor modifies and runs a MATLAB file (m-file), so in order to run what is in the editor you will be required to create and save a file.
 
+2. 17
+:::
+:::
+As you saw in the challenge above, using the command window requires you to create and save a file with the extension `.m`. This means that when you next come to do your analysis, processing, etc. you can reopen this file and work from it again. 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+::: callout
+### Saving your work
 
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can use pandoc markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
+Unlike the editor, any work done in the command window is not saved! This means that if you close MATLAB or your computer this work will be lost. Hence why you should use it only for quick temporary tasks
+:::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
-
+- The MATLAB interface is very customisable, adjust it to suit you
+- Use the command window for quick tasks like exploring data, testing, etc.
+- Use the editor for developing code you want to persist between sessions
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

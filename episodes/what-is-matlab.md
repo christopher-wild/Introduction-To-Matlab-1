@@ -16,7 +16,7 @@ exercises: 2
 
 - Explain what tasks MATLAB is well suited for
 - Explain how MATLAB compares to other common tools (Python, R)
-- Understand the tradeoffs of choosing MATLAB as a tool
+- Understand the trade-offs of choosing MATLAB as a tool
 :::
 
 ## Introduction
