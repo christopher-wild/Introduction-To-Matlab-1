@@ -830,7 +830,7 @@ important.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>May be worth explaining that ’*’ is used for multiplication in many
 programming languages and ‘/’ for divide</p>
@@ -860,7 +860,7 @@ Then press ‘Run’ in the EDITOR tab at the top.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li><p>The editor modifies and runs a MATLAB file (m-file), so in order
@@ -930,6 +930,7 @@ any links that you are not going to use.
 <ul>
 <li>How can I store and work on data?</li>
 <li>What does MATLAB assume about your data?</li>
+<li>How can I handle data of 2, 3 or more dimensions?</li>
 </ul>
 </div>
 </div>
@@ -939,9 +940,11 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to use markdown with the new lesson template</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
+<li>Understand what a Variable is and how MATLAB handles them</li>
+<li>Learn about slicing and how we can create variables of various
+dimensions</li>
+<li>Briefly review data types and why they aren’t important in
+MATLAB</li>
 </ul>
 </div>
 </div>
@@ -951,35 +954,128 @@ challenge blocks</li>
 <section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.html" class="external-link">Pandoc-flavored Markdown</a>
-for static files (with extension <code>.md</code>) and <a href="https://rmarkdown.rstudio.com/" class="external-link">R Markdown</a> for dynamic files
-that can render code into output (with extension <code>.Rmd</code>).
-Please refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson template:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<p>When programming there are many occasions where you will want to be
+able to access some data, for example you may want to load in a data set
+from online, load data from an sensor in the field or store the results
+of a calculation. How we store and refer to data in programming is a
+variable.</p>
+</section><section><h2 class="section-heading" id="variables">Variables<a class="anchor" aria-label="anchor" href="#variables"></a>
+</h2>
+<hr class="half-width">
+<p>A variable in MATLAB is made of 2 parts, a name and a value. The name
+is what we use to refer to a variable and the value is the number, word,
+or item that is stored in it.</p>
+<p>The value of a variable in MATLAB can be many things! Some examples
+are</p>
+<table class="table">
+<thead><tr class="header">
+<th>Variable Type</th>
+<th>Example Value</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Integer</td>
+<td>1, 2, 3</td>
+</tr>
+<tr class="even">
+<td>Double</td>
+<td>1.23, 4.56</td>
+</tr>
+<tr class="odd">
+<td>Character</td>
+<td>A, b, c</td>
+</tr>
+<tr class="even">
+<td>String</td>
+<td>“hello”</td>
+</tr>
+<tr class="odd">
+<td>Matrix</td>
+<td>[1 2 3; 4 5 6]</td>
+</tr>
+<tr class="even">
+<td>Logical</td>
+<td>True, False</td>
+</tr>
+</tbody>
+</table></section><section><h2 class="section-heading" id="workspace">Workspace<a class="anchor" aria-label="anchor" href="#workspace"></a>
+</h2>
+<hr class="half-width">
+<p>As mentioned in the previous episode, MATLAB has a section called the
+workspace, this is where you can view what Variables are in-memory. The
+most simple way of creating a variable is with the ‘=’ symbol, for
+example:</p>
+<pre><code><span><span class="va">my_variable</span> <span class="op">=</span> <span class="fl">5</span></span></code></pre>
+<p>will create a variable with the name my_variable and a value of 5</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Memory </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
+<p>MATLAB (like most programming languages), holds variables in-memory.
+This means they are stored on your computers RAM rather than your hard
+drive. This allows for fast access and processing, however RAM is wiped
+when your computer turns off so your workspace will be deleted when you
+close MATLAB or your computer.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
+<li><p>Create a variable called A with a value of 3:
+<code>A = 3</code></p></li>
+<li><p>Create a variable called B with a value of hello:
+<code>B = 'hello'</code></p></li>
+<li><p>Create a variable called a with the value of C:
+<code>a = 'C'</code></p></li>
+<li><p>Customise your workspace and add the extra columns Size, Bytes
+and Class, this can be done by right clicking the top of the
+workspace</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>Your workspace should look like this! We suggest customising the
+workspace columns just as an example of what is possible. <img src="../fig/workspace.png" alt="A screenshot of the MATLAB workspace with 3 variables in it from the challenge" class="figure"></p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
+  <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Data Types </h3>
+</button>
+<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div class="accordion-body">
+<p>You may notice in the previous solution there is a type called a
+‘double’. MATLAB is whats known as a dynamically typed language, which
+is also called the fun duck typing. This is based off the saying ‘if it
+walks like a duck and quacks like a duck it’s probably a duck’. In
+programming terms this means that when you make a variable MATLAB has a
+look at it and assumes what type it is based on how it looks. Other
+languages like C++ require you to explicitly tell the program what type
+every variable is.</p>
+<p>For you as a user, this means that you don’t have to really know or
+pay attention to data types! However it is worth knowing they exist as
+if you get more advanced you may want to manipulate them to optimise
+your algorithms or some other advanced use cases.</p>
 </div>
 </div>
 </div>
@@ -992,7 +1088,7 @@ View”</p>
 <h3 class="callout-title">Challenge 1: Can you do it?</h3>
 <div class="callout-content">
 <p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
+<div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1001,12 +1097,12 @@ View”</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1028,12 +1124,12 @@ View”</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
