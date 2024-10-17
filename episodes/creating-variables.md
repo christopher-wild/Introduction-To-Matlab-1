@@ -1,5 +1,5 @@
 ---
-title: 'Creating and Manipulating Variables'
+title: 'Creating Multidimensional Variables'
 teaching: 10
 exercises: 2
 ---
@@ -54,8 +54,6 @@ b =
 
      1     3     5     7     9    11    13    15    17    19
 ```
-
-&nbsp;
 
 ## Functions
 
@@ -237,9 +235,50 @@ This is a good point to use `help cat` and explain how they can learn that the p
 
 :::
 
+If we wanted to concat the subsets into 1 variable as separate columns we could do
+
+``` MATLAB
+
+new_data2 = [subset1 subset2]
+
+new_data2 = cat(2,subset1,subset2)
+```
+
+One advantage of using cat is that it can work for arrays of larger dimensions, where the square bracket shortcut only works for up to 2D data.
+
+::: challenge
+
+1. Extract every other row from Data assign it to the varibale name subset_a
+
+2. Extract the first four rows from the 2nd column of Data. Call it subset_b
+
+3. Transpose subset_b, call this variable subset_t 
+
+4. Concatenate subset_a and subset_t along the first dimension
+
+::: solution
+``` MATLAB
+% Extract every other row from Data assign it to the varibale name subset_a
+subset_a = Data(1:2:6,:)
+
+% Extract the first four rows from the 2nd column of Data. Call it subset_b
+subset_b = Data(1:4,2)
+
+% Transpose subset_b, call this varibale subset_t 
+subset_t = subset_b'
+
+% Concatenate subset_a and subset_t along the first dimension
+newdata = cat(1, subset_a, subset_t)
+```
+
+newdata should be of size 4x4
+
+:::
+
+:::
 
 ::: keypoints 
 
- 
+ - point 1
 :::
 
