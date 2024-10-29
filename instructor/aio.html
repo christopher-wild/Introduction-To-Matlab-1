@@ -297,19 +297,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="creating-variables.html">5. Creating Multidimensional Variables</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush7">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading7">
-        <a href="manipulating-variables.html">6. Manipulating Variables</a>
+        <a href="manipulating-variables.html">5. Manipulating Variables</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -437,7 +425,7 @@ reinforce the objectives.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Inline instructor notes can help inform instructors of timing
 challenges associated with the lessons. They appear in the “Instructor
@@ -468,7 +456,7 @@ View”</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -495,7 +483,7 @@ View”</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -937,7 +925,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-variables-and-dimensions"><p>Content from <a href="variables-and-dimensions.html">Variables and Dimensions</a></p>
 <hr>
-<p>Last updated on 2024-10-15 |
+<p>Last updated on 2024-10-29 |
 
         <a href="https://github.com/christopher-wild/Matlab_Course_101/edit/main/episodes/variables-and-dimensions.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
@@ -1021,7 +1009,9 @@ are</p>
 <td>True, False</td>
 </tr>
 </tbody>
-</table>
+</table></section><section><h2 class="section-heading" id="todo-variable-naming-convention">TODO: variable naming convention<a class="anchor" aria-label="anchor" href="#todo-variable-naming-convention"></a>
+</h2>
+<hr class="half-width">
 <p>As mentioned in the previous episode, MATLAB has a section called the
 workspace, this is where you can view what Variables are in-memory. The
 most simple way of creating a variable is with the ‘=’ symbol, for
@@ -1033,7 +1023,7 @@ example:</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Memory </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>MATLAB (like most programming languages), holds variables in-memory.
 This means they are stored on your computers RAM rather than your hard
@@ -1070,7 +1060,7 @@ workspace</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Your workspace should look like this! We suggest customising the
 workspace columns just as an example of what is possible. <img src="../fig/workspace.png" alt="A screenshot of the MATLAB workspace with 3 variables in it from the challenge" class="figure"></p>
@@ -1083,7 +1073,7 @@ workspace columns just as an example of what is possible. <img src="../fig/works
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
   <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Data Types </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <p>You may notice in the previous solution there is a type called a
 ‘double’. MATLAB is whats known as a dynamically typed language, which
@@ -1131,10 +1121,11 @@ there in each variable?</li>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>If you double click a variable name in the workspace you can explore
-it in a spreadsheet style interface</p>
+it in a spreadsheet style interface, this is called the variable
+editor.</p>
 </div>
 </div>
 </div>
@@ -1144,7 +1135,7 @@ it in a spreadsheet style interface</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>There should be 2 new variables in your workspace, <code>P</code> and
 <code>D</code>. Both have a size of 128x128, this means they have 128
@@ -1211,6 +1202,10 @@ array</div>
 <p>In general when creating multidimensional variables you - use square
 brackets <code>[]</code> - separate columns with a space <code></code> -
 separate rows with a semi-colon <code>;</code></p>
+</div>
+</section><section><h2 class="section-heading" id="todo-make-this-read-nicer-all-in-challenge">TODO: make this read nicer, all in challenge?<a class="anchor" aria-label="anchor" href="#todo-make-this-read-nicer-all-in-challenge"></a>
+</h2>
+<hr class="half-width">
 <div id="challenge3" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1234,10 +1229,9 @@ separate rows with a semi-colon <code>;</code></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Solution to 3. is <code>G = [10 20; 30 40]</code></p>
-</div>
 </div>
 </div>
 </div>
@@ -1255,10 +1249,10 @@ variables you weren’t intending to.</p>
 all variables</p>
 <p><strong>Clear single variable</strong></p>
 <p><code>clear A</code> will clear just the variable called A</p>
-<p><strong>Clear command window</strong></p>
-<p>After working a while you will have a long history of commands in
-your command window, you can clear this up by typing <code>clc</code>
-(command line clear).</p>
+<p><strong>Clear command window</strong> ## TODO clearup history After
+working a while you will have a long history of commands in your command
+window, you can clear this up by typing <code>clc</code> (command line
+clear).</p>
 <div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1271,66 +1265,6 @@ window by pressing the up arrow on your keyboard</p>
 </div>
 </div>
 </div>
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Key Points</h3>
-<div class="callout-content">
-<ul>
-<li>Variables are the main way we access and use data in MATLAB</li>
-<li>Variables can store many types of data including multidimensional
-data</li>
-<li>Creating multidimensional arrays is done with square brackets</li>
-</ul>
-</div>
-</div>
-</div>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section><section id="aio-creating-variables"><p>Content from <a href="creating-variables.html">Creating Multidimensional Variables</a></p>
-<hr>
-<p>Last updated on 2024-10-17 |
-
-        <a href="https://github.com/christopher-wild/Matlab_Course_101/edit/main/episodes/creating-variables.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<div class="overview card">
-<h2 class="card-header">Overview</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Questions</h3>
-<ul>
-<li>How can I create larger variables?</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Objectives</h3>
-<ul>
-<li>temp</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
-</h2>
-<hr class="half-width">
-<p>This episode will explore for advanced techniques for making
-variables and look at some useful premade code (functions) that can help
-us.</p>
 </section><section><h2 class="section-heading" id="indexing">Indexing<a class="anchor" aria-label="anchor" href="#indexing"></a>
 </h2>
 <hr class="half-width">
@@ -1339,10 +1273,10 @@ us.</p>
 </h3>
 <p>MATLAB provides what is called the colon notation which allows us to
 specify a range of values.</p>
-<div class="codewrapper sourceCode" id="cb1">
+<div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="va">a</span> <span class="op">=</span> [<span class="fl">1</span><span class="op">:</span><span class="fl">10</span>]</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="va">a</span> <span class="op">=</span> [<span class="fl">1</span><span class="op">:</span><span class="fl">10</span>]</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1358,11 +1292,11 @@ specify a range of values.</p>
 </h3>
 <p>You can also specify a step, so the colon notation only makes every
 nth number</p>
-<div class="codewrapper sourceCode" id="cb3">
+<div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a></span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="va">b</span> <span class="op">=</span> [<span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">20</span>]</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="va">b</span> <span class="op">=</span> [<span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">20</span>]</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1381,7 +1315,7 @@ code blocks that serve a commonly wanted functionality.</p>
 <p>First we will use one called linspace, which stands for linearly
 spaced. It creates a vector of linearly spaced numbers, you specify the
 start, end and how many numbers.</p>
-<div id="callout1" class="callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1392,26 +1326,26 @@ start, end and how many numbers.</p>
 documentation!</p>
 <p>The help command will give a brief text description about the
 function and how to use it</p>
-<div class="codewrapper sourceCode" id="cb5">
-<h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="va">help</span> <span class="va">linspace</span></span></code></pre>
-</div>
-<p>The doc command will give a more detailed description including
-examples</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="va">doc</span> <span class="va">linspace</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="va">help</span> <span class="va">linspace</span></span></code></pre>
 </div>
-</div>
-</div>
-</div>
+<p>The doc command will give a more detailed description including
+examples</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a></span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="va">c</span> <span class="op">=</span> <span class="va">linspace</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">10</span><span class="op">,</span><span class="fl">5</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="va">doc</span> <span class="va">linspace</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="va">c</span> <span class="op">=</span> <span class="va">linspace</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">10</span><span class="op">,</span><span class="fl">5</span>)</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1423,19 +1357,19 @@ c =
     </code></pre>
 </div>
 <p>Some other useful functions are:</p>
-<div class="codewrapper sourceCode" id="cb9">
+<div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="co">% Rand creates an n-dimensional array of random numberes between 0 and 1.</span></span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="va">d</span> <span class="op">=</span> <span class="va">rand</span>(<span class="fl">5</span><span class="op">,</span><span class="fl">1</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="co">% Create matrix of 0's</span></span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="va">e</span> <span class="op">=</span> <span class="va">zeros</span>(<span class="fl">2</span><span class="op">,</span><span class="fl">2</span>)</span>
-<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a><span class="co">% NaN means 'Not a Number', this is a special and useful term for when a value can't be represented by a number. </span></span>
-<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a><span class="va">f</span> <span class="op">=</span> <span class="va">nan</span>(<span class="fl">5</span><span class="op">,</span><span class="fl">5</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="co">% Rand creates an n-dimensional array of random numberes between 0 and 1.</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="va">d</span> <span class="op">=</span> <span class="va">rand</span>(<span class="fl">5</span><span class="op">,</span><span class="fl">1</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a><span class="co">% Create matrix of 0's</span></span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a><span class="va">e</span> <span class="op">=</span> <span class="va">zeros</span>(<span class="fl">2</span><span class="op">,</span><span class="fl">2</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a><span class="co">% NaN means 'Not a Number', this is a special and useful term for when a value can't be represented by a number. </span></span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a><span class="va">f</span> <span class="op">=</span> <span class="va">nan</span>(<span class="fl">5</span><span class="op">,</span><span class="fl">5</span>)</span></code></pre>
 </div>
-<div id="callout2" class="callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1452,7 +1386,7 @@ power</li>
 </div>
 </div>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="challenge4" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -1468,19 +1402,19 @@ h</li>
 </div>
 </div>
 </div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb10">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="va">g</span> <span class="op">=</span> <span class="fl">12</span><span class="op">:</span><span class="fl">4</span><span class="op">:</span><span class="fl">100</span></span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="va">or</span></span>
-<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="va">g</span> <span class="op">=</span> <span class="va">linspace</span>(<span class="fl">12</span><span class="op">,</span><span class="fl">100</span><span class="op">,</span><span class="fl">23</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="va">g</span> <span class="op">=</span> <span class="fl">12</span><span class="op">:</span><span class="fl">4</span><span class="op">:</span><span class="fl">100</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="va">or</span></span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="va">g</span> <span class="op">=</span> <span class="va">linspace</span>(<span class="fl">12</span><span class="op">,</span><span class="fl">100</span><span class="op">,</span><span class="fl">23</span>)</span></code></pre>
 </div>
 </div>
 </div>
@@ -1494,7 +1428,10 @@ h</li>
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul>
-<li>point 1</li>
+<li>Variables are the main way we access and use data in MATLAB</li>
+<li>Variables can store many types of data including multidimensional
+data</li>
+<li>Creating multidimensional arrays is done with square brackets</li>
 </ul>
 </div>
 </div>
@@ -1678,7 +1615,7 @@ use <code>help</code> or <code>doc</code> to learn more!</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>This is a good point to use <code>help cat</code> and explain how
 they can learn that the parameters to it are and why you need a 1 at the
@@ -1725,7 +1662,7 @@ dimension</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1801,7 +1738,7 @@ row*column</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
