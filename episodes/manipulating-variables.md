@@ -190,12 +190,13 @@ new_data3 = cat(1, subset_a, subset_t)
 
 We're now going to look at some mathematical operations we can perform on our variables.
 
-Before continuing this is a good point to clear your workspace again and make a new dummy data variable.
-This time we will round each data point to the nearest whole number with the function round
+Before continuing this is a good point to `clear` your workspace again and make a new dummy data variable.
+This time we will round each data point to the nearest whole number with the function `round`
 
 ``` MATLAB
-
+clear
 data = 100 * rand(10,10)
+
 % Round to nearest whole number and overwrite data variable
 data = round(data)
 ```
@@ -213,31 +214,37 @@ data_multiply = data * 10;
 
 ```
 
-One common mistake made by users of MATLAB is with the multiply operator. When multiplying by a single number like above the behaviour may be as you except.
+One common mistake made by users of MATLAB is with the multiply operator. When multiplying pay attention to make sure you are getting the result you expect!
 
 ::: challenge
 
-1. make a row vector called row with values 1, 2 & 3
-2. make a column vector called column with values 4, 5 & 6
-3. before trying to multiply them, guess the size of the result of row*column
-4. multiply row and column and see if the result is as you expect
+1. Make a row vector called `row` with values 1, 2 & 3
+2. Make a column vector called `column` with values 4, 5 & 6
+3. Before trying to multiply them, guess the size of the result of `row * column`
+4. Multiply row and column and see if the result is as you expect
 
 ::: solution
 
 ``` MATLAB
 
 row = [1 2 3];
-column = [4 5 6];
-answer = row*column
+column = [4; 5; 6];
+row * column
 
 ```
-The resulting variable should be a scalar! If you are familiar with matrix multiplication this may make sense to you, don't worry if you are not however.
+``` OUTPUT
+
+ans =
+    32
+
+```
+The resulting variable is a scalar! If you are familiar with matrix multiplication this may make sense to you, don't worry if you are not however.
 :::
 :::
 
 As seen in the challenge above, by default MATLAB will attempt to perform something called [matrix multiplcation](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.sheffield.ac.uk/media/31960/download%3Fattachment&ved=2ahUKEwi64YS815WJAxXRSkEAHUU8BNwQFnoECDUQAQ&usg=AOvVaw22KRaWHu7_55Hec_tvuYxa), you don't need to know about matrix multiplication but it is worth knowing it is the default behaviour.
 
-What you may expect is something called [dot multiplication](https://uk.mathworks.com/help/matlab/ref/double.times.html)
+What you may expect to have been doing is something called [dot multiplication](https://uk.mathworks.com/help/matlab/ref/double.times.html).
 
 ``` MATLAB
 
@@ -253,11 +260,14 @@ ans =
 
 As the example above shows, dot multiplication multiplies each element of both variables with each other 1 to 1. This is why it is also sometimes called element-wise multiplication.
 
-## functions
+## Functions
 
 Next we will look at some key functions that you may want to use in data analysis and processing
 
 ``` MATLAB
+
+% Find the size of a matrix
+matrix_size = size(data)
 
 % Add together the rows in each column
 column_totals = sum(data, 1)
