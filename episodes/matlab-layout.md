@@ -7,7 +7,7 @@ exercises: 2
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - What do all the different parts of the MATLAB interface do?
-- What features are important to know to get started in MATLAB?
+- What features are important to get started in MATLAB?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

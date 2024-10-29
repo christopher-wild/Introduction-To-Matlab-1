@@ -94,7 +94,7 @@ data(3,2) = NaN
 
 ### Transpose
 
-One useful tool in manipulating matrices in MATLAB is the transpose. This will effectively pivot the matrix so each row becomes a column and each column becomes a row. This is done in MATLAB by adding an apostrophe `'` after a variable:
+One useful tool in manipulating matrices (plural of matrix) in MATLAB is the transpose. This will effectively pivot the matrix so each row becomes a column and each column becomes a row. This is done in MATLAB by adding an apostrophe `'` after a variable:
 
 ``` MATLAB
 % Transpose data and save it as data_t
