@@ -62,8 +62,8 @@ episodes:
 - introduction.md
 - what-is-matlab.md
 - matlab-layout.md
-- variables-and-dimensions.md
-- manipulating-variables.md
+- creating-variables.md
+- working-with-variables.md
 
 # Information for Learners
 learners:

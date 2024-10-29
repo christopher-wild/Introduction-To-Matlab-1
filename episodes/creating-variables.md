@@ -1,5 +1,5 @@
 ---
-title: 'Variables and Dimensions'
+title: 'Creating Variables'
 teaching: 10
 exercises: 2
 ---

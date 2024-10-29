@@ -1,5 +1,5 @@
 ---
-title: 'Manipulating Variables'
+title: 'Working with Variables'
 teaching: 10
 exercises: 2
 ---
@@ -144,6 +144,8 @@ One advantage of using cat is that it can work for arrays of larger dimensions, 
 
 ::: challenge
 
+### Challenge 1
+
 1. Extract every other row from Data assign it to the varibale name subset_a
 
 2. Extract the first four rows from the 2nd column of Data. Call it subset_b
@@ -203,6 +205,8 @@ One common mistake made by users of MATLAB is with the multiply operator. When m
 
 ::: challenge
 
+### Challenge 2
+
 1. make a row vector called row with values 1, 2 & 3
 2. make a column vector called column with values 4, 5 & 6
 3. before trying to multiply them, guess the size of the result of row*column
@@ -239,7 +243,7 @@ ans =
 
 As the example above shows, dot multiplication multiplies each element of both variables with each other 1 to 1. This is why it is also sometimes called element-wise multiplication.
 
-## functions
+## Functions
 
 Next we will look at some key functions that you may want to use in data analysis and processing
 
@@ -261,6 +265,29 @@ data_min = min(data, [], 2)
 data_max_all = max(data, [], "all")
 
 ```
+
+::: instructor
+It is worth exploring why the square brackets exist here, demoing using the help or doc command to find why that exists and use it as a learning example.
+:::
+
+::: challenge
+
+### challenge 3
+
+In this challenge we will combine the tools we have learnt so far to compare rainfall data between Sheffield and India
+
+1. Load the datasets from files
+``` MATLAB
+% Import rainfall data. 
+Sheffield_Rain = load('Sheffield_Rain.csv');
+India_Rain = load('SouthIndia_Rainfall.csv');
+```
+
+2. Investigate the data, open it up in the workspace and understand what is in each column
+
+3 
+
+:::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
