@@ -260,7 +260,7 @@
 <li><a href="#altering-variables">Altering Variables</a></li>
 <li><a href="#operations">Operations</a></li>
 <li><a href="#functions">Functions</a></li>
-<li><a href="#functions-1">Functions</a></li>
+<li><a href="#indian-rainfall-example">Indian Rainfall Example</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -513,7 +513,7 @@ use <code>help</code> or <code>doc</code> to learn more!</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>This is a good point to use <code>help cat</code> and explain how
 they can learn that the parameters to it are and why you need a 1 at the
@@ -539,11 +539,11 @@ columns we could do</p>
 arrays of larger dimensions, whereas the square bracket shortcut,
 <code>vertcat</code>, and <code>horzcat</code> only works for the first
 two dimensions of the data.</p>
-<div id="challenge-1-1" class="callout challenge">
+<div id="challenge-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1-1" class="callout-inner">
+<div id="challenge-1" class="callout-inner">
 <h3 class="callout-title">Challenge 1</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li><p>Extract every other row from Data assign it to the varibale name
@@ -562,7 +562,7 @@ the first dimension</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -616,11 +616,11 @@ computer programs.</p>
 <p>One common mistake made by users of MATLAB is with the multiply
 operator. When multiplying pay attention to make sure you are getting
 the result you expect!</p>
-<div id="challenge-2-1" class="callout challenge">
+<div id="challenge-2" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-2-1" class="callout-inner">
+<div id="challenge-2" class="callout-inner">
 <h3 class="callout-title">Challenge 2</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Make a row vector called <code>row</code> with values 1, 2 &amp;
@@ -639,7 +639,7 @@ the result you expect!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -687,7 +687,6 @@ multiplication</a>.</p>
 element of both variables with each other 1 to 1. This is why it is also
 sometimes called element-wise multiplication.</p>
 </section><section><h2 class="section-heading" id="functions">Functions<a class="anchor" aria-label="anchor" href="#functions"></a></h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="functions-1">Functions<a class="anchor" aria-label="anchor" href="#functions-1"></a></h2>
 <hr class="half-width"><p>Next we will look at some key functions that you may want to use in
 data analysis and processing</p>
 <div class="codewrapper sourceCode" id="cb19">
@@ -717,7 +716,7 @@ data analysis and processing</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>It is worth exploring why the square brackets exist here, demoing
 using the help or doc command to find why that exists and use it as a
@@ -726,28 +725,97 @@ learning example.</p>
 </div>
 </div>
 </div>
-<div id="challenge-3" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="challenge-3" class="callout-inner">
-<h3 class="callout-title">challenge 3</h3>
-<div class="callout-content">
-<p>In this challenge we will combine the tools we have learnt so far to
+</section><section><h2 class="section-heading" id="indian-rainfall-example">Indian Rainfall Example<a class="anchor" aria-label="anchor" href="#indian-rainfall-example"></a></h2>
+<hr class="half-width"><p>In this example we will combine the tools we have learnt so far to
 compare rainfall data between Sheffield and India</p>
-<ol style="list-style-type: decimal"><li>Load the datasets from files</li>
-</ol><div class="codewrapper sourceCode" id="cb20">
+<p>Each dataset comprises of monthly rainfall averages per year from
+1901-2014.</p>
+<p>Sheffield (<a href="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/sheffielddata.txt" class="external-link uri">https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/sheffielddata.txt</a>)
+Peninsular India (<a href="https://www.tropmet.res.in/DataArchival-51-Page" class="external-link uri">https://www.tropmet.res.in/DataArchival-51-Page</a>)</p>
+<div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="co">% Import rainfall data. </span></span>
-<span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a><span class="va">Sheffield_Rain</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'Sheffield_Rain.csv'</span>)<span class="op">;</span></span>
-<span id="cb20-3"><a href="#cb20-3" tabindex="-1"></a><span class="va">India_Rain</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'SouthIndia_Rainfall.csv'</span>)<span class="op">;</span></span></code></pre>
+<span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a><span class="va">sheffield_data</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'Sheffield_Rain.csv'</span>)<span class="op">;</span></span>
+<span id="cb20-3"><a href="#cb20-3" tabindex="-1"></a><span class="va">india_data</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'SouthIndia_Rainfall.csv'</span>)<span class="op">;</span></span></code></pre>
 </div>
-<ol start="2" style="list-style-type: decimal"><li>Investigate the data, open it up in the workspace and understand
-what is in each column</li>
-</ol><p>3</p>
+<div id="challenge3" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Investigate the data, open it up in the workspace and think about
+what is in each column</p>
 </div>
 </div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p>Each dataset contains 13 columns, the first column is the year and
+the other 12 are for each month of the year</p>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge4" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal"><li><p>Create a subset of <code>sheffield_data</code> and
+<code>india_data</code> that contains only the rain data, call these
+subsets <code>sheffield_rain</code> and <code>india_rain</code></p></li>
+<li><p>The Indian rainfall series is in tenths of a millimeter. Convert
+to millimeters by dividing each point by 10</p></li>
+<li><p>The columns contain monthly rainfall, find the average monthly
+rainfall over the 114 years. Call these new variables
+<code>india_monthly</code> and <code>sheffield_monthly</code></p></li>
+</ol></div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb21">
+<h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="co">% Select all data except the first column</span></span>
+<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a><span class="va">sheffield_rain</span> <span class="op">=</span> <span class="va">sheffield_data</span>(<span class="op">:,</span><span class="fl">2</span><span class="op">:</span><span class="kw">end</span>)<span class="op">;</span></span>
+<span id="cb21-3"><a href="#cb21-3" tabindex="-1"></a><span class="va">india_rain</span> <span class="op">=</span> <span class="va">india_data</span>(<span class="op">:,</span><span class="fl">2</span><span class="op">:</span><span class="kw">end</span>)<span class="op">;</span> </span>
+<span id="cb21-4"><a href="#cb21-4" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" tabindex="-1"></a><span class="co">% Convert india_rain to millimeters</span></span>
+<span id="cb21-6"><a href="#cb21-6" tabindex="-1"></a><span class="va">india_rain</span> <span class="op">=</span> <span class="va">india_rain</span><span class="op">/</span><span class="fl">10</span><span class="op">;</span></span>
+<span id="cb21-7"><a href="#cb21-7" tabindex="-1"></a></span>
+<span id="cb21-8"><a href="#cb21-8" tabindex="-1"></a><span class="co">% Take the mean of each column to find the average monthly rainfall</span></span>
+<span id="cb21-9"><a href="#cb21-9" tabindex="-1"></a><span class="va">sheffield_monthly</span> <span class="op">=</span> <span class="va">mean</span>(<span class="va">sheffield_rain</span><span class="op">,</span> <span class="fl">1</span>)<span class="op">;</span></span>
+<span id="cb21-10"><a href="#cb21-10" tabindex="-1"></a><span class="va">india_mothly</span> <span class="op">=</span> <span class="va">mean</span>(<span class="va">india_rain</span><span class="op">,</span> <span class="fl">1</span>)<span class="op">;</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>If your <code>sheffield_monthly</code> and <code>india_monthly</code>
+variables are correctly made, you should be able to run the following
+code to generate a bar chart comparing the two average rainfalls.</p>
+<div class="codewrapper sourceCode" id="cb22">
+<h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="va">bar</span>([<span class="fl">1</span><span class="op">:</span><span class="fl">12</span>]<span class="op">,</span><span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">India_Monthly</span><span class="op">,</span> <span class="va">Sheffield_Monthly</span>)<span class="op">,</span><span class="ss">'grouped'</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" tabindex="-1"></a><span class="va">legend</span>(<span class="ss">'South India'</span><span class="op">,</span> <span class="ss">'Sheffield'</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" tabindex="-1"></a><span class="va">ylabel</span>(<span class="ss">'Rainfall (mm)'</span>)</span></code></pre>
 </div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -756,14 +824,10 @@ what is in each column</li>
 <div class="callout-inner">
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
-<ul><li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<ul><li>Variables</li>
+<li>Use functions to create, edit and operate on variables</li>
+<li>
+</li>
 </ul></div>
 </div>
 </div>
