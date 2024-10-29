@@ -33,7 +33,7 @@ Don't worry if your layout does not match the one in the diagram. The MATLAB app
 
 Each number on the diagram describes:
 
-1. Menu Bar - This bar functions much like the bars at the top of many Microsoft and Google applications you may be familiar with, it has tabs with different options in. Throughout this course we will be exploring some of these tabs in more detail.
+1. Menu Ribbon - This bar functions much like the bars at the top of many Microsoft and Google applications you may be familiar with, it has tabs with different options in. Throughout this course we will be exploring some of these tabs in more detail.
 2. Explorer - Here you can explore the files on your computer much like the explorer on your computer. The folder currently showing is referred to as the 'Current Folder' or 'Working Directory', this is where MATLAB will first search for files.
 3. Editor - This is where you will edit MATLAB code files
 4. Command Window - One off MATLAB commands can be executed here 
@@ -92,7 +92,7 @@ b = 136 / 8
 2. 17
 :::
 :::
-As you saw in the challenge above, using the command window requires you to create and save a file with the extension `.m`. This means that when you next come to do your analysis, processing, etc. you can reopen this file and work from it again. 
+As you saw in the challenge above, using the editor requires you to create and save a file with the extension `.m`. This means that when you next come to do your analysis, processing, etc. you can reopen this file and work from it again. 
 
 ::: callout
 ### Saving your work
