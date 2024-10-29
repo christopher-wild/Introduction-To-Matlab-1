@@ -7,22 +7,22 @@ exercises: 2
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - How can I store and work on data?
-- What does MATLAB assume about your data?
+- What does MATLAB assume about data?
 - How can I handle data of 2, 3 or more dimensions?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- What is a variable and how MATLAB handles them
-- How we can create variables of various dimensions
+- Lean about what a variable is and how MATLAB handles variables
+- Understand how to create variables of various dimensions
 - Briefly review data types and why they aren't important in MATLAB
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction
 
-When programming there are many occasions where you will want to be able to access some data, for example you may want to load in a data set from online, load data from an sensor in the field or store the results of a calculation. How we store and refer to data in programming is a variable.
+When programming there are many occasions where you will want to be able to access some data. For example, you may want to load in a data set from online, load data from an sensor in the field or store the results of a calculation. How we store and refer to data in programming is through the use of variables.
 
 
 ## Variables
@@ -35,10 +35,10 @@ The value of a variable in MATLAB can be many things! Some examples are
 |---|---|
 |Integer| 1, 2, 3|
 |Double| 1.23, 4.56|
-|Character| A, b, c|
+|Character| 'A', 'b', 'c'|
 |String| "hello"|
 |Matrix| [1 2 3; 4 5 6]|
-|Logical| True, False|
+|Logical| `true`, `false`|
 
 
 As mentioned in the previous episode, MATLAB has a section called the workspace, this is where you can view what Variables are in-memory. The most simple way of creating a variable is with the '=' symbol, for example:
