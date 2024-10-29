@@ -7,7 +7,7 @@ exercises: 2
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - What do all the different parts of the MATLAB interface do?
-- What features are important to get started in MATLAB?
+- What features are important to know to get started in MATLAB?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -20,9 +20,11 @@ exercises: 2
 
 ## Introduction
 
-MATLAB as a language is mainly interacted with through the official MATLAB application. Before we press on with learning, writing and running MATLAB this episode will quickly run through the various parts of MATLAB and help you understand where and how you should write MATLAB.
+MATLAB as a language is mainly interacted with through the MATLAB application. Before we press on with learning, writing and running MATLAB, this episode will quickly run through the various parts of MATLAB and help you understand where and how you should write MATLAB.
 
-Below is an annotated diagram what of the MATLAB application looks like.
+Below is an annotated diagram showing what of the MATLAB application looks like.
+
+![Annotated MATLAB Application](fig/blank_matlab.png){alt="A screenshot of the MATLAB application with red numbers annotating the major areas of the application which are detailed in the main body"}
 
 ::: callout
 ### Layout
@@ -34,20 +36,19 @@ Don't worry if your layout does not match the one in the diagram. The MATLAB app
 Each number on the diagram describes:
 
 1. Menu Bar - This bar functions much like the bars at the top of many Microsoft and Google applications you may be familiar with, it has tabs with different options in. Throughout this course we will be exploring some of these tabs in more detail.
-2. Explorer - Here you can explore the files on your computer much like the explorer on your computer. The folder currently showing is referred to as the 'Current Folder' or 'Working Directory', this is where MATLAB will first search for files.
-3. Editor - This is where you will edit MATLAB code files
-4. Command Window - One off MATLAB commands can be executed here 
+2. Current Folder - Here you can explore the files on your computer much like the explorer on your computer. The folder currently showing is also referred to as the or 'Working Directory' and this is where MATLAB will first search for files.
+3. Editor - This is where you will edit MATLAB code files.
+4. Command Window - One off MATLAB commands can be executed here .
 5. Workspace - You will be able to see any variables that are currently in memory here
 
-If any of this isn't clear again don't worry! This course will further explore and clarify all of these tools
+If any of this isn't clear again don't worry! This course will further explore and clarify all of these tools.
 
 
-![Annotated MATLAB Application](fig/blank_matlab.png){alt="A screenshot of the MATLAB application with red numbers annotating the major areas of the application which are detailed in the main body"}
 
 
 ## Editor VS Command Window
 
-You can write and run MATLAB code in both the command window and the editor so understanding the purpose and differences of them is important.
+You can write and run MATLAB code in both the command window and the editor so understanding the purpose (and differences) of each is important.
 
 | Command Window | Editor |
 |---|---|
