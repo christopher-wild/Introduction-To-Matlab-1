@@ -360,14 +360,15 @@ editor</li>
 </div>
 </div>
 <section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
-<hr class="half-width"><p>MATLAB as a language is mainly interacted with through the official
-MATLAB application. Before we press on with learning, writing and
-running MATLAB this episode will quickly run through the various parts
-of MATLAB and help you understand where and how you should write
+<hr class="half-width"><p>MATLAB as a language is mainly interacted with through the MATLAB
+application. Before we press on with learning, writing and running
+MATLAB, this episode will quickly run through the various parts of
+MATLAB and help you understand where and how you should write
 MATLAB.</p>
-<p>Below is an annotated diagram what of the MATLAB application looks
-like.</p>
-<div id="layout" class="callout">
+<p>Below is an annotated diagram showing what of the MATLAB application
+looks like.</p>
+<figure><img src="../fig/blank_matlab.png" alt="A screenshot of the MATLAB application with red numbers annotating the major areas of the application which are detailed in the main body" class="figure mx-auto d-block"><div class="figcaption">Annotated MATLAB Application</div>
+</figure><div id="layout" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -386,20 +387,19 @@ view tab at the top</p>
 many Microsoft and Google applications you may be familiar with, it has
 tabs with different options in. Throughout this course we will be
 exploring some of these tabs in more detail.</li>
-<li>Explorer - Here you can explore the files on your computer much like
-the explorer on your computer. The folder currently showing is referred
-to as the ‘Current Folder’ or ‘Working Directory’, this is where MATLAB
-will first search for files.</li>
-<li>Editor - This is where you will edit MATLAB code files</li>
-<li>Command Window - One off MATLAB commands can be executed here</li>
+<li>Current Folder - Here you can explore the files on your computer
+much like the explorer on your computer. The folder currently showing is
+is also known as the ‘Working Directory’ and this is where MATLAB will
+first search for files.</li>
+<li>Editor - This is where you will edit MATLAB code files.</li>
+<li>Command Window - One off MATLAB commands can be executed here.</li>
 <li>Workspace - You will be able to see any variables that are currently
 in memory here</li>
 </ol><p>If any of this isn’t clear again don’t worry! This course will
-further explore and clarify all of these tools</p>
-<figure><img src="../fig/blank_matlab.png" alt="A screenshot of the MATLAB application with red numbers annotating the major areas of the application which are detailed in the main body" class="figure mx-auto d-block"><div class="figcaption">Annotated MATLAB Application</div>
-</figure></section><section><h2 class="section-heading" id="editor-vs-command-window">Editor VS Command Window<a class="anchor" aria-label="anchor" href="#editor-vs-command-window"></a></h2>
+further explore and clarify all of these tools.</p>
+</section><section><h2 class="section-heading" id="editor-vs-command-window">Editor VS Command Window<a class="anchor" aria-label="anchor" href="#editor-vs-command-window"></a></h2>
 <hr class="half-width"><p>You can write and run MATLAB code in both the command window and the
-editor so understanding the purpose and differences of them is
+editor so understanding the purpose (and differences) of each is
 important.</p>
 <table class="table"><thead><tr class="header"><th>Command Window</th>
 <th>Editor</th>
@@ -430,8 +430,10 @@ important.</p>
 </button>
 <div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
-<p>May be worth explaining that ’*’ is used for multiplication in many
-programming languages and ‘/’ for divide</p>
+<p>May be worth explaining that <code>*</code> is used for
+multiplication in many programming languages and <code>/</code> for
+divide Explain <code>ans =</code> - or at least mention this will be
+covered later.</p>
 </div>
 </div>
 </div>
@@ -443,8 +445,8 @@ programming languages and ‘/’ for divide</p>
 <div id="challenge-2-using-the-editor" class="callout-inner">
 <h3 class="callout-title">Challenge 2: Using the editor</h3>
 <div class="callout-content">
-<p>Press ‘New’ at the top left and type the following into your editor.
-Then press ‘Run’ in the EDITOR tab at the top.</p>
+<p>Press ‘New Script’ at the top left and type the following into your
+editor. Then press ‘Run’ in the EDITOR tab at the top.</p>
 <pre><code><span><span class="va">b</span> <span class="op">=</span> <span class="fl">136</span> <span class="op">/</span> <span class="fl">8</span></span></code></pre>
 <ol style="list-style-type: decimal"><li>What do you have to do in order for the code to run?</li>
 <li>What is the output?</li>
@@ -459,8 +461,8 @@ Then press ‘Run’ in the EDITOR tab at the top.</p>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li><p>The editor modifies and runs a MATLAB file (m-file), so in order
-to run what is in the editor you will be required to create and save a
-file.</p></li>
+to run what is in the editor you will be required to save the script you
+have made to a new m-file.</p></li>
 <li><p>17</p></li>
 </ol></div>
 </div>
@@ -468,8 +470,8 @@ file.</p></li>
 </div>
 <p>As you saw in the challenge above, using the editor requires you to
 create and save a file with the extension <code>.m</code>. This means
-that when you next come to do your analysis, processing, etc. you can
-reopen this file and work from it again.</p>
+that when you next come to do your analysis, processing, etc., you can
+reopen this file and continue work from it again.</p>
 <div id="saving-your-work" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -479,7 +481,7 @@ reopen this file and work from it again.</p>
 <div class="callout-content">
 <p>Unlike the editor, any work done in the command window is not saved!
 This means that if you close MATLAB or your computer this work will be
-lost. Hence why you should use it only for quick temporary tasks</p>
+lost. Hence why you should use it only for quick temporary tasks.</p>
 </div>
 </div>
 </div>

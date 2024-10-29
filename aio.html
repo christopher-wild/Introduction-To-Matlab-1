@@ -530,7 +530,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-what-is-matlab"><p>Content from <a href="what-is-matlab.html">What is MATLAB?</a></p>
 <hr>
-<p>Last updated on 2024-10-15 |
+<p>Last updated on 2024-10-29 |
 
         <a href="https://github.com/christopher-wild/Matlab_Course_101/edit/main/episodes/what-is-matlab.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -584,10 +584,10 @@ popular choice among researchers, engineers, and scientists.</p>
 <h3 class="callout-title">Propriety</h3>
 <div class="callout-content">
 <p>MATLAB is a propriety language, this means it is owned by a specific
-company MathWorks. Therefore it’s source code is not public ally
-available (opposite of open-source) and the software is licensed for use
-under specific terms and conditions. There are many pros and cons of
-working with propriety software</p>
+company, MathWorks. Therefore it’s source code is not publically
+available (i.e., it is the opposite of open-source) and the software is
+licensed for use under specific terms and conditions. There are many
+pros and cons of working with propriety software.</p>
 </div>
 </div>
 </div>
@@ -608,7 +608,7 @@ disadvantages of software being owned by a single company.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -624,7 +624,8 @@ disadvantages of software being owned by a single company.</p>
 <tbody>
 <tr class="odd">
 <td><strong>Cost</strong></td>
-<td>Individual MATLAB license is £800/year</td>
+<td>Individual MATLAB license is £800/year (£59 one time for
+students)</td>
 <td>Nearly always free</td>
 </tr>
 <tr class="even">
@@ -657,23 +658,23 @@ place to go</td>
 understanding MATLAB’s strengths and weaknesses in comparison is
 important. Two of the main alternative languages you may have heard of
 are <a href="https://www.python.org/" class="external-link">Python</a> and <a href="https://www.r-project.org" class="external-link">R (r-project)</a>. These are often
-compared because all 3 languages are often used for</p>
+compared because all 3 languages are often used for research.</p>
 <div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> High-Level and Low-Level </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>Low-level code languages are closer to the machine’s language,
 requiring more precise instructions for the computer to understand. They
 offer greater control over hardware but are more complex to write and
 debug. High-level code languages are more abstract and human-readable,
-translating complex instructions into simpler machine code. They are
+translating simpler instructions into the complex machine code. They are
 easier to learn and maintain but may sacrifice some performance
 efficiency compared to low-level languages.</p>
-<p>MATLAB is considered on the high-level end of languages, making it
-relatively easy to read and work with.</p>
+<p>MATLAB is considered to be on the high-level end of languages, making
+it relatively easy to read and work with.</p>
 </div>
 </div>
 </div>
@@ -737,14 +738,15 @@ editor</li>
 <section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
-<p>MATLAB as a language is mainly interacted with through the official
-MATLAB application. Before we press on with learning, writing and
-running MATLAB this episode will quickly run through the various parts
-of MATLAB and help you understand where and how you should write
+<p>MATLAB as a language is mainly interacted with through the MATLAB
+application. Before we press on with learning, writing and running
+MATLAB, this episode will quickly run through the various parts of
+MATLAB and help you understand where and how you should write
 MATLAB.</p>
-<p>Below is an annotated diagram what of the MATLAB application looks
-like.</p>
-<div id="layout" class="callout">
+<p>Below is an annotated diagram showing what of the MATLAB application
+looks like.</p>
+<figure><img src="fig/blank_matlab.png" alt="A screenshot of the MATLAB application with red numbers annotating the major areas of the application which are detailed in the main body" class="figure mx-auto d-block"><div class="figcaption">Annotated MATLAB Application</div>
+</figure><div id="layout" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -764,23 +766,22 @@ view tab at the top</p>
 many Microsoft and Google applications you may be familiar with, it has
 tabs with different options in. Throughout this course we will be
 exploring some of these tabs in more detail.</li>
-<li>Explorer - Here you can explore the files on your computer much like
-the explorer on your computer. The folder currently showing is referred
-to as the ‘Current Folder’ or ‘Working Directory’, this is where MATLAB
-will first search for files.</li>
-<li>Editor - This is where you will edit MATLAB code files</li>
-<li>Command Window - One off MATLAB commands can be executed here</li>
+<li>Current Folder - Here you can explore the files on your computer
+much like the explorer on your computer. The folder currently showing is
+is also known as the ‘Working Directory’ and this is where MATLAB will
+first search for files.</li>
+<li>Editor - This is where you will edit MATLAB code files.</li>
+<li>Command Window - One off MATLAB commands can be executed here.</li>
 <li>Workspace - You will be able to see any variables that are currently
 in memory here</li>
 </ol>
 <p>If any of this isn’t clear again don’t worry! This course will
-further explore and clarify all of these tools</p>
-<figure><img src="fig/blank_matlab.png" alt="A screenshot of the MATLAB application with red numbers annotating the major areas of the application which are detailed in the main body" class="figure mx-auto d-block"><div class="figcaption">Annotated MATLAB Application</div>
-</figure></section><section><h2 class="section-heading" id="editor-vs-command-window">Editor VS Command Window<a class="anchor" aria-label="anchor" href="#editor-vs-command-window"></a>
+further explore and clarify all of these tools.</p>
+</section><section><h2 class="section-heading" id="editor-vs-command-window">Editor VS Command Window<a class="anchor" aria-label="anchor" href="#editor-vs-command-window"></a>
 </h2>
 <hr class="half-width">
 <p>You can write and run MATLAB code in both the command window and the
-editor so understanding the purpose and differences of them is
+editor so understanding the purpose (and differences) of each is
 important.</p>
 <table class="table">
 <thead><tr class="header">
@@ -826,8 +827,8 @@ important.</p>
 <div id="challenge-2-using-the-editor" class="callout-inner">
 <h3 class="callout-title">Challenge 2: Using the editor</h3>
 <div class="callout-content">
-<p>Press ‘New’ at the top left and type the following into your editor.
-Then press ‘Run’ in the EDITOR tab at the top.</p>
+<p>Press ‘New Script’ at the top left and type the following into your
+editor. Then press ‘Run’ in the EDITOR tab at the top.</p>
 <pre><code><span><span class="va">b</span> <span class="op">=</span> <span class="fl">136</span> <span class="op">/</span> <span class="fl">8</span></span></code></pre>
 <ol style="list-style-type: decimal">
 <li>What do you have to do in order for the code to run?</li>
@@ -845,8 +846,8 @@ Then press ‘Run’ in the EDITOR tab at the top.</p>
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li><p>The editor modifies and runs a MATLAB file (m-file), so in order
-to run what is in the editor you will be required to create and save a
-file.</p></li>
+to run what is in the editor you will be required to save the script you
+have made to a new m-file.</p></li>
 <li><p>17</p></li>
 </ol>
 </div>
@@ -855,8 +856,8 @@ file.</p></li>
 </div>
 <p>As you saw in the challenge above, using the editor requires you to
 create and save a file with the extension <code>.m</code>. This means
-that when you next come to do your analysis, processing, etc. you can
-reopen this file and work from it again.</p>
+that when you next come to do your analysis, processing, etc., you can
+reopen this file and continue work from it again.</p>
 <div id="saving-your-work" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -866,7 +867,7 @@ reopen this file and work from it again.</p>
 <div class="callout-content">
 <p>Unlike the editor, any work done in the command window is not saved!
 This means that if you close MATLAB or your computer this work will be
-lost. Hence why you should use it only for quick temporary tasks</p>
+lost. Hence why you should use it only for quick temporary tasks.</p>
 </div>
 </div>
 </div>
@@ -909,7 +910,7 @@ any links that you are not going to use.
 <h3 class="card-title">Questions</h3>
 <ul>
 <li>How can I store and work on data?</li>
-<li>What does MATLAB assume about your data?</li>
+<li>What does MATLAB assume about data?</li>
 <li>How can I handle data of 2, 3 or more dimensions?</li>
 </ul>
 </div>
@@ -920,8 +921,8 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>What is a variable and how MATLAB handles them</li>
-<li>How we can create variables of various dimensions</li>
+<li>Lean about what a variable is and how MATLAB handles variables</li>
+<li>Understand how to create variables of various dimensions</li>
 <li>Briefly review data types and why they aren’t important in
 MATLAB</li>
 </ul>
@@ -934,10 +935,10 @@ MATLAB</li>
 </h2>
 <hr class="half-width">
 <p>When programming there are many occasions where you will want to be
-able to access some data, for example you may want to load in a data set
-from online, load data from an sensor in the field or store the results
-of a calculation. How we store and refer to data in programming is a
-variable.</p>
+able to access some data. For example, you may want to load in a data
+set from online, load data from an sensor in the field or store the
+results of a calculation. How we store and refer to data in programming
+is through the use of variables.</p>
 </section><section><h2 class="section-heading" id="variables">Variables<a class="anchor" aria-label="anchor" href="#variables"></a>
 </h2>
 <hr class="half-width">
@@ -962,7 +963,7 @@ are</p>
 </tr>
 <tr class="odd">
 <td>Character</td>
-<td>A, b, c</td>
+<td>‘A’, ‘b’, ‘c’</td>
 </tr>
 <tr class="even">
 <td>String</td>
@@ -974,16 +975,19 @@ are</p>
 </tr>
 <tr class="even">
 <td>Logical</td>
-<td>True, False</td>
+<td>
+<code>true</code>, <code>false</code>
+</td>
 </tr>
 </tbody>
 </table>
-<p>As mentioned in the previous episode, MATLAB has a section called the
+<p>As mentioned in the previous episode MATLAB has a section called the
 workspace, this is where you can view what Variables are in-memory. The
-most simple way of creating a variable is with the ‘=’ symbol, for
+simplest way of creating a variable is with the ‘=’ symbol, for
 example:</p>
 <pre><code><span><span class="va">my_variable</span> <span class="op">=</span> <span class="fl">5</span></span></code></pre>
-<p>will create a variable with the name my_variable and a value of 5</p>
+<p>will create a variable with the name <code>my_variable</code> and a
+value of 5.</p>
 <div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
@@ -994,8 +998,8 @@ example:</p>
 <p>MATLAB (like most programming languages), holds variables in-memory.
 This means they are stored on your computers RAM rather than your hard
 drive. This allows for fast access and processing, however RAM is wiped
-when your computer turns off so your workspace will be deleted when you
-close MATLAB or your computer.</p>
+when your computer turns off or an application quits so your workspace
+will be deleted when you close MATLAB or shut off your computer.</p>
 </div>
 </div>
 </div>
@@ -1008,12 +1012,11 @@ close MATLAB or your computer.</p>
 <h3 class="callout-title">Challenge 1: Creating Variables</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
-<li><p>Create a variable called A with a value of 3:
-<code>A = 3</code></p></li>
-<li><p>Create a variable called B with a value of hello:
-<code>B = 'hello'</code></p></li>
-<li><p>Create a variable called a with the value of C:
-<code>a = 'C'</code></p></li>
+<li><p>Create a variable called A with a value of 3</p></li>
+<li><p>Create a variable called B with a value of ‘hello’</p></li>
+<li><p>Create a variable called a with the value of ‘C’:</p></li>
+<li><p>Create a variable called C with the value of the variable in
+A</p></li>
 <li><p>Customise your workspace and add the extra columns Size, Bytes
 and Class, this can be done by right clicking the top of the
 workspace</p></li>
@@ -1028,8 +1031,15 @@ workspace</p></li>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>Your workspace should look like this! We suggest customising the
-workspace columns just as an example of what is possible. <img src="fig/workspace.png" alt="A screenshot of the MATLAB workspace with 3 variables in it from the challenge" class="figure"></p>
+<ol style="list-style-type: decimal">
+<li><code>A = 3</code></li>
+<li><code>B = 'hello'</code></li>
+<li><code>a = 'C'</code></li>
+<li><code>C = A</code></li>
+<li>Your workspace should look like this! We suggest customising the
+workspace columns just as an example of what is possible. <img src="fig/workspace.png" alt="A screenshot of the MATLAB workspace with 3 variables in it from the challenge" class="figure">
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -1043,16 +1053,16 @@ workspace columns just as an example of what is possible. <img src="fig/workspac
 <div class="accordion-body">
 <p>You may notice in the previous solution there is a type called a
 ‘double’. MATLAB is whats known as a dynamically typed language, which
-is also called the fun duck typing. This is based off the saying ‘if it
-walks like a duck and quacks like a duck it’s probably a duck’. In
-programming terms this means that when you make a variable MATLAB has a
-look at it and assumes what type it is based on how it looks. Other
-languages like C++ require you to explicitly tell the program what type
-every variable is.</p>
+is also called “<a href="https://en.wikipedia.org/wiki/Duck_typing" class="external-link">duck
+typing</a>”. This is based off the saying ‘if it walks like a duck and
+quacks like a duck it’s probably a duck’. In programming terms this
+means that when you make a variable MATLAB has a look at it and assumes
+what type it is based on how it looks. Other languages like C++ require
+you to explicitly tell the program what type every variable is.</p>
 <p>For you as a user, this means that you don’t have to really know or
 pay attention to data types! However it is worth knowing they exist, as
 if you get more advanced you may want to manipulate them to optimise
-your algorithms or some other advanced use cases.</p>
+your algorithms or for some other advanced use cases.</p>
 </div>
 </div>
 </div>
@@ -1099,7 +1109,7 @@ very good at storing and working with multidimensional data.</p>
 <h3 class="callout-title">Penny command</h3>
 <div class="callout-content">
 <p>Use the <code>penny</code> command in the command window. this
-command will create an interactive 3d plot of a US penny mold.</p>
+command will create an interactive 3D plot of a US penny mold.</p>
 <ol style="list-style-type: decimal">
 <li>How many new variables are there in your work space?</li>
 <li>Look at the size column in your workspace, how many dimensions are
@@ -1116,8 +1126,7 @@ there in each variable?</li>
 <div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>If you double click a variable name in the workspace you can explore
-it in a spreadsheet style interface, this is called the variable
-editor.</p>
+it in a spreadsheet style interface called the variable editor.</p>
 </div>
 </div>
 </div>
@@ -1131,7 +1140,7 @@ editor.</p>
 <div class="accordion-body">
 <p>There should be 2 new variables in your workspace, <code>P</code> and
 <code>D</code>. Both have a size of 128x128, this means they have 128
-rows and 128 columns and therefore are 2 dimensional.</p>
+rows and 128 columns and are therefore 2-dimensional matrices.</p>
 </div>
 </div>
 </div>
@@ -1147,7 +1156,8 @@ rows and 128 columns and therefore are 2 dimensional.</p>
 helpful.</p>
 <p>The first dimension is always rows and the second columns. So if you
 saw a variable with size 5x10, you could picture it looking like a
-spreadsheet with 5 rows and 10 columns.</p>
+spreadsheet with 5 rows and 10 columns. (This is the opposite if what
+you would expect from X, Y notation!)</p>
 </div>
 </div>
 </div>
@@ -1191,9 +1201,15 @@ array</div>
 </figure><div class="section level3">
 <h3 id="creating-multidimensional-variables">Creating Multidimensional Variables<a class="anchor" aria-label="anchor" href="#creating-multidimensional-variables"></a>
 </h3>
-<p>In general when creating multidimensional variables you - use square
-brackets <code>[]</code> - separate columns with a space <code></code> -
-separate rows with a semi-colon <code>;</code></p>
+<p>In general when creating multidimensional variables you</p>
+<ul>
+<li>use square brackets <code>[]</code>
+</li>
+<li>separate columns with a space <code></code>
+</li>
+<li>separate rows with a semi-colon <code>;</code>
+</li>
+</ul>
 <p>Here are some examples of creating vector variables:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1233,7 +1249,7 @@ separate rows with a semi-colon <code>;</code></p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="cleaning-workspace">Cleaning Workspace<a class="anchor" aria-label="anchor" href="#cleaning-workspace"></a>
+</section><section><h2 class="section-heading" id="cleaning-the-workspace">Cleaning the Workspace<a class="anchor" aria-label="anchor" href="#cleaning-the-workspace"></a>
 </h2>
 <hr class="half-width">
 <p>Finally we will look at how we can remove variables we aren’t using!
@@ -1245,11 +1261,12 @@ variables you weren’t intending to.</p>
 <p>Simply putting <code>clear</code> into your command window will clear
 all variables</p>
 <p><strong>Clear single variable</strong></p>
-<p><code>clear A</code> will clear just the variable called A</p>
+<p><code>clear A</code> will clear just the variable called
+<code>A</code></p>
 <p><strong>Clear command window</strong> ## TODO clearup history After
 working a while you will have a long history of commands in your command
-window, you can clear this up by typing <code>clc</code> (command line
-clear).</p>
+window, you can clear this up by running the <code>clc</code> (command
+line clear) command.</p>
 <div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1258,7 +1275,9 @@ clear).</p>
 <h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>You can access commands you have previously typed in the command
-window by pressing the up arrow on your keyboard</p>
+window by pressing the up arrow on your keyboard. If you type part of a
+command and press the up arrow, only commands that match the partially
+completed command will be shown.</p>
 </div>
 </div>
 </div>
@@ -1273,13 +1292,12 @@ specify a range of values.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="va">a</span> <span class="op">=</span> [<span class="fl">1</span><span class="op">:</span><span class="fl">10</span>]</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="va">a</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>a =
-
      1     2     3     4     5     6     7     8     9    10</code></pre>
 </div>
 <p><code>a</code> should be 1x10 size, meaning 1 row 10 columns</p>
@@ -1292,27 +1310,51 @@ nth number</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a></span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="va">b</span> <span class="op">=</span> [<span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">20</span>]</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="va">b</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">20</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>
-b =
-
+<pre class="output" tabindex="0"><code>b =
      1     3     5     7     9    11    13    15    17    19</code></pre>
+</div>
+<p>Steps can also be non-integer values</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="va">c</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">2</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>c =
+    1.0000    1.1000    1.2000    1.3000    1.4000    1.5000    1.6000    1.7000    1.8000    1.9000    2.0000</code></pre>
+</div>
+<div id="steps-and-range-end-values" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="steps-and-range-end-values" class="callout-inner">
+<h3 class="callout-title">Steps and range end values</h3>
+<div class="callout-content">
+<p>When you specify a step that is grater than 1, the last value won’t
+necessarily be the range end value! Instead it will be the closest value
+that doesn’t go over the end value and this is why the last value in
+<code>b</code> is 19 and not 20!</p>
+</div>
+</div>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="functions">Functions<a class="anchor" aria-label="anchor" href="#functions"></a>
 </h2>
 <hr class="half-width">
-<p>We can also use functions to create arrays. Functions are premade
-code blocks that serve a commonly wanted functionality.</p>
-<p>First we will use one called linspace, which stands for linearly
-spaced. It creates a vector of linearly spaced numbers, you specify the
-start, end and how many numbers.</p>
-<div id="callout4" class="callout">
+<p>We can also use functions to create arrays (vectors or matricies).
+Functions are premade code blocks that serve a commonly wanted
+functionality.</p>
+<p>First we will use one called <code>linspace</code>, which stands for
+linearly spaced. It creates a vector of linearly spaced numbers, you
+specify the start, end and how many numbers.</p>
+<div id="callout5" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1323,50 +1365,50 @@ start, end and how many numbers.</p>
 documentation!</p>
 <p>The help command will give a brief text description about the
 function and how to use it</p>
-<div class="codewrapper sourceCode" id="cb7">
-<h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="va">help</span> <span class="va">linspace</span></span></code></pre>
-</div>
-<p>The doc command will give a more detailed description including
-examples</p>
-<div class="codewrapper sourceCode" id="cb8">
-<h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="va">doc</span> <span class="va">linspace</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a></span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="va">c</span> <span class="op">=</span> <span class="va">linspace</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">10</span><span class="op">,</span><span class="fl">5</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="va">help</span> <span class="va">linspace</span></span></code></pre>
+</div>
+<p>The doc command will give a more detailed description including
+examples</p>
+<div class="codewrapper sourceCode" id="cb10">
+<h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="va">doc</span> <span class="va">linspace</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="va">d</span> <span class="op">=</span> <span class="va">linspace</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">10</span><span class="op">,</span><span class="fl">5</span>)</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>
-c =
-
+d =
     1.0000    3.2500    5.5000    7.7500   10.0000
     </code></pre>
 </div>
 <p>Some other useful functions are:</p>
-<div class="codewrapper sourceCode" id="cb11">
+<div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="co">% Rand creates an n-dimensional array of random numberes between 0 and 1.</span></span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="va">d</span> <span class="op">=</span> <span class="va">rand</span>(<span class="fl">5</span><span class="op">,</span><span class="fl">1</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="co">% Create matrix of 0's</span></span>
-<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a><span class="va">e</span> <span class="op">=</span> <span class="va">zeros</span>(<span class="fl">2</span><span class="op">,</span><span class="fl">2</span>)</span>
-<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a></span>
-<span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a><span class="co">% NaN means 'Not a Number', this is a special and useful term for when a value can't be represented by a number. </span></span>
-<span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a><span class="va">f</span> <span class="op">=</span> <span class="va">nan</span>(<span class="fl">5</span><span class="op">,</span><span class="fl">5</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="co">% Rand creates an n-dimensional array of random numberes between 0 and 1.</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="va">e</span> <span class="op">=</span> <span class="va">rand</span>(<span class="fl">5</span><span class="op">,</span><span class="fl">1</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a><span class="co">% Create 2D matrix of zeros.</span></span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a><span class="va">f</span> <span class="op">=</span> <span class="va">zeros</span>(<span class="fl">2</span><span class="op">,</span><span class="fl">2</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" tabindex="-1"></a><span class="co">% Create a 2D matrix of NaN values - NaN means 'Not a Number'</span></span>
+<span id="cb13-8"><a href="#cb13-8" tabindex="-1"></a><span class="co">% This is a special and useful term for when a value can't be represented by a number.</span></span>
+<span id="cb13-9"><a href="#cb13-9" tabindex="-1"></a><span class="va">g</span> <span class="op">=</span> <span class="va">nan</span>(<span class="fl">5</span><span class="op">,</span><span class="fl">5</span>)</span></code></pre>
 </div>
-<div id="callout5" class="callout">
+<div id="callout6" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1377,7 +1419,7 @@ c =
 <ul>
 <li>Mathematical operations that cant be computed (division by 0, root
 of negative numbers)</li>
-<li>No data was recorded, for example a in-field sensor may have lost
+<li>No data were recorded, for example an in-field sensor may have lost
 power</li>
 </ul>
 </div>
@@ -1392,9 +1434,11 @@ power</li>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>Create a vector with numbers 12 to 100 containing every 4th number
-(steps of 4), call it g</li>
+(steps of 4), called <code>h</code>
+</li>
 <li>Create a matrix of random numbers with 4 rows and 5 columns, call it
-h</li>
+<code>ii</code>
+</li>
 </ol>
 </div>
 </div>
@@ -1406,14 +1450,27 @@ h</li>
 </button>
 <div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb12">
+<div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="va">g</span> <span class="op">=</span> <span class="fl">12</span><span class="op">:</span><span class="fl">4</span><span class="op">:</span><span class="fl">100</span></span>
-<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="va">or</span></span>
-<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="va">g</span> <span class="op">=</span> <span class="va">linspace</span>(<span class="fl">12</span><span class="op">,</span><span class="fl">100</span><span class="op">,</span><span class="fl">23</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fl">1</span>. `<span class="va">h</span> <span class="op">=</span> <span class="fl">12</span><span class="op">:</span><span class="fl">4</span><span class="op">:</span><span class="fl">100</span>`</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="fl">2</span>. `<span class="va">ii</span> <span class="op">=</span> <span class="va">linspace</span>(<span class="fl">12</span><span class="op">,</span><span class="fl">100</span><span class="op">,</span><span class="fl">23</span>)`</span></code></pre>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div id="i" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="i" class="callout-inner">
+<h3 class="callout-title">i</h3>
+<div class="callout-content">
+<p><code>i</code> in MATLAB can be used as a variable, but it also has a
+special meaning as the square root of -1! MATLAB treats <code>j</code>
+the same way. To avoid confusion it’s often better to use
+<code>ii</code> and <code>jj</code> instead.</p>
 </div>
 </div>
 </div>
@@ -1465,9 +1522,9 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to use markdown with the new lesson template</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
+<li>Access MATLAB variables and change them</li>
+<li>Use variables to execute mathematical operations and in
+functions</li>
 </ul>
 </div>
 </div>
@@ -1478,10 +1535,13 @@ challenge blocks</li>
 </h2>
 <hr class="half-width">
 <p>So far we have learnt how to create variables of various sizes with
-different methods. This episode will now focus on how can we use
-variables? ## Extracting Variables</p>
-<p>Now is a good time to <strong>clear</strong> and <strong>clc</strong>
-your workspace and command window!</p>
+different methods. This episode will now focus on how ways we can use
+variables.</p>
+<p>Now is a good time to <code>clear</code> and <code>clc</code> your
+workspace and command window!</p>
+</section><section><h2 class="section-heading" id="extracting-variables">Extracting Variables<a class="anchor" aria-label="anchor" href="#extracting-variables"></a>
+</h2>
+<hr class="half-width">
 <p>First lets start by making a dummy variable that we can use as our
 stand-in dataset.</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -1500,11 +1560,11 @@ with round brackets <code>()</code></p>
 </h3>
 <pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="va">data</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">2</span>)</span></code></pre>
 </div>
-<p>We can use colon notation to extract values as well:</p>
+<p>We can use colon notation to extract multiple values as well:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co">% Extract columns 1,2,3 on row 3</span></span>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co">% Extract columns 1, 2, and 3 on row 3</span></span>
 <span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="va">data</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>)</span></code></pre>
 </div>
 <p>A single colon with no numbers will select all</p>
@@ -1522,10 +1582,24 @@ with round brackets <code>()</code></p>
 <span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="va">subset1</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">,:</span>) </span>
 <span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co">% Select every other column in the first row, save in subset2</span></span>
-<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="va">subset2</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">6</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="va">subset2</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="kw">end</span>)</span>
 <span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a></span>
 <span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="co">% Select the first, third and forth rows for all columns, save in subset3</span></span>
 <span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="va">subset3</span> <span class="op">=</span> <span class="va">data</span>([<span class="fl">1</span> <span class="fl">3</span> <span class="fl">4</span>]<span class="op">,</span> <span class="op">:</span>)</span></code></pre>
+</div>
+<div id="end" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="end" class="callout-inner">
+<h3 class="callout-title">end</h3>
+<div class="callout-content">
+<p>When extracting the subset of a matrix, or slicing it, when
+specifying the range you can use the keyword <code>end</code> to
+represent the last value in a vector (or row or column of a matrix,
+etc.).</p>
+</div>
+</div>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="altering-variables">Altering Variables<a class="anchor" aria-label="anchor" href="#altering-variables"></a>
@@ -1543,7 +1617,7 @@ value of a variable we simply put it on the left:</p>
 <p>If you look at data in your workspace now you will see that value has
 been changed!</p>
 <p>One use case of altering data may be when you find an erroneous
-value. For example if you were looking at a table of reviews out of 5,
+value. For example, if you were looking at a table of reviews out of 5,
 you may wish to change a rating that was somehow set to above 5 to NAN,
 to show it was invalid.</p>
 <div class="codewrapper sourceCode" id="cb7">
@@ -1557,11 +1631,11 @@ to show it was invalid.</p>
 <p>One useful tool in manipulating matrices (plural of matrix) in MATLAB
 is the transpose. This will effectively pivot the matrix so each row
 becomes a column and each column becomes a row. This is done in MATLAB
-by adding an apostrophe after a variable:</p>
+by adding an apostrophe <code>'</code> after a variable:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co">% transpose data</span></span>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co">% Transpose data and save it as data_t</span></span>
 <span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="va">data_t</span> <span class="op">=</span> <span class="va">data</span><span class="op">'</span></span></code></pre>
 </div>
 <p>You should see that data_t has a flipped size compared to data</p>
@@ -1569,32 +1643,36 @@ by adding an apostrophe after a variable:</p>
 <div class="section level3">
 <h3 id="concatenation">Concatenation<a class="anchor" aria-label="anchor" href="#concatenation"></a>
 </h3>
-<p>Concatenation (also called concat or cat) is a common operation in
-data handling. Concatenating means to link or put together, it allows to
-to take two matricies or variables and add them into a single variable.
-This is useful for if example your dataset is saved across multiple
-files.</p>
-<p>First let’s clear our workspace again, create a new data variable and
-some subsets of the data to work with.</p>
+<p>Concatenation is a common operation in data handling. Concatenating
+means to link or put together, it allows to to take two matricies or
+variables and add them into a single variable. This is useful for if
+example your dataset is saved across multiple files.</p>
+<p>First let’s <code>clear</code> our workspace again, create a new data
+variable and some subsets of the data to work with.</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a></span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="va">data</span> <span class="op">=</span> <span class="fl">100</span><span class="op">*</span><span class="va">rand</span>(<span class="fl">6</span><span class="op">,</span><span class="fl">4</span>)<span class="op">;</span></span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="va">subset1</span> <span class="op">=</span> <span class="va">data</span>(<span class="op">:,</span><span class="fl">1</span>)<span class="op">;</span></span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="va">subset2</span> <span class="op">=</span> <span class="va">data</span>(<span class="op">:,</span><span class="fl">2</span>)<span class="op">;</span></span></code></pre>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="va">clear</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="va">data</span> <span class="op">=</span> <span class="fl">100</span><span class="op">*</span><span class="va">rand</span>(<span class="fl">6</span><span class="op">,</span><span class="fl">4</span>)<span class="op">;</span></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="va">subset1</span> <span class="op">=</span> <span class="va">data</span>(<span class="op">:,</span><span class="fl">1</span>)<span class="op">;</span></span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="va">subset2</span> <span class="op">=</span> <span class="va">data</span>(<span class="op">:,</span><span class="fl">2</span>)<span class="op">;</span></span></code></pre>
 </div>
-<p>Both our subsets are column vectors, if we wanted to concaternate
-them together into a larger column vector there are 2 ways</p>
+<p>Both our subsets are column vectors, if we wanted to concatenate them
+together into a larger column vector there are three ways</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="va">new_data</span> <span class="op">=</span> [<span class="va">subset1</span><span class="op">;</span> <span class="va">subset2</span>]<span class="op">;</span></span>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="va">new_data</span> <span class="op">=</span> [<span class="va">subset1</span><span class="op">;</span> <span class="va">subset2</span>]</span>
 <span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="va">new_data</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">subset1</span><span class="op">,</span> <span class="va">subset2</span>)</span></code></pre>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="va">new_data</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">subset1</span><span class="op">,</span> <span class="va">subset2</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a><span class="va">new_data</span> <span class="op">=</span> <span class="va">vertcat</span>(<span class="va">subset1</span><span class="op">,</span> <span class="va">subset2</span>)</span></code></pre>
 </div>
-<div id="callout1" class="callout">
+<p>All <code>[;]</code>, <code>cat</code>, and <code>vertcat</code> are
+all different ways to do the same vertical concatenation.</p>
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1607,7 +1685,7 @@ use <code>help</code> or <code>doc</code> to learn more!</p>
 </div>
 </div>
 
-<p>If we wanted to concat the subsets into 1 variable as separate
+<p>If we wanted to concatenate the subsets into 1 variable as separate
 columns we could do</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1615,26 +1693,30 @@ columns we could do</p>
 <pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a></span>
 <span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="va">new_data2</span> <span class="op">=</span> [<span class="va">subset1</span> <span class="va">subset2</span>]</span>
 <span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="va">new_data2</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">2</span><span class="op">,</span><span class="va">subset1</span><span class="op">,</span><span class="va">subset2</span>)</span></code></pre>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="va">new_data2</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">2</span><span class="op">,</span><span class="va">subset1</span><span class="op">,</span><span class="va">subset2</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a><span class="va">new_data2</span> <span class="op">=</span> <span class="va">horzcat</span>(<span class="va">subset1</span><span class="op">,</span><span class="va">subset2</span>)</span></code></pre>
 </div>
-<p>One advantage of using cat is that it can work for arrays of larger
-dimensions, where the square bracket shortcut only works for up to 2D
-data.</p>
-<div id="challenge-1" class="callout challenge">
+<p>One advantage of using <code>cat</code> is that it can work for
+arrays of larger dimensions, whereas the square bracket shortcut,
+<code>vertcat</code>, and <code>horzcat</code> only works for the first
+two dimensions of the data.</p>
+<div id="challenge-1-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1" class="callout-inner">
+<div id="challenge-1-1" class="callout-inner">
 <h3 class="callout-title">Challenge 1</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
 <li><p>Extract every other row from Data assign it to the varibale name
-subset_a</p></li>
-<li><p>Extract the first four rows from the 2nd column of Data. Call it
-subset_b</p></li>
-<li><p>Transpose subset_b, call this variable subset_t</p></li>
-<li><p>Concatenate subset_a and subset_t along the first
-dimension</p></li>
+<code>subset_a</code></p></li>
+<li><p>Extract the first four rows from the 2nd column of Data and call
+it <code>subset_b</code></p></li>
+<li><p>Transpose <code>subset_b</code>, call this variable
+<code>subset_t</code></p></li>
+<li><p>Concatenate <code>subset_a</code> and <code>subset_t</code> along
+the first dimension</p></li>
 </ol>
 </div>
 </div>
@@ -1644,24 +1726,24 @@ dimension</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="co">% Extract every other row from Data assign it to the varibale name subset_a</span></span>
-<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="va">subset_a</span> <span class="op">=</span> <span class="va">Data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">6</span><span class="op">,:</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="va">subset_a</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">6</span><span class="op">,:</span>)</span>
 <span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a><span class="co">% Extract the first four rows from the 2nd column of Data. Call it subset_b</span></span>
-<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="va">subset_b</span> <span class="op">=</span> <span class="va">Data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">,</span><span class="fl">2</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a><span class="co">% Extract the first four rows from the 2nd column of Data and call it subset_b</span></span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="va">subset_b</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">,</span><span class="fl">2</span>)</span>
 <span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a></span>
 <span id="cb12-7"><a href="#cb12-7" tabindex="-1"></a><span class="co">% Transpose subset_b, call this varibale subset_t </span></span>
 <span id="cb12-8"><a href="#cb12-8" tabindex="-1"></a><span class="va">subset_t</span> <span class="op">=</span> <span class="va">subset_b</span><span class="op">'</span></span>
 <span id="cb12-9"><a href="#cb12-9" tabindex="-1"></a></span>
 <span id="cb12-10"><a href="#cb12-10" tabindex="-1"></a><span class="co">% Concatenate subset_a and subset_t along the first dimension</span></span>
-<span id="cb12-11"><a href="#cb12-11" tabindex="-1"></a><span class="va">newdata</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">subset_a</span><span class="op">,</span> <span class="va">subset_t</span>)</span></code></pre>
+<span id="cb12-11"><a href="#cb12-11" tabindex="-1"></a><span class="va">new_data3</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">subset_a</span><span class="op">,</span> <span class="va">subset_t</span>)</span></code></pre>
 </div>
-<p>newdata should be of size 4x4</p>
+<p><code>new_data3</code> should be of size 4x4</p>
 </div>
 </div>
 </div>
@@ -1672,16 +1754,18 @@ dimension</p></li>
 <hr class="half-width">
 <p>We’re now going to look at some mathematical operations we can
 perform on our variables.</p>
-<p>Before continuing this is a good point to clear your workspace again
-and make a new dummy data variable. This time we will round each data
-point to the nearest whole number with the function round</p>
+<p>Before continuing this is a good point to <code>clear</code> your
+workspace again and make a new dummy data variable. This time we will
+round each data point to the nearest whole number with the function
+<code>round</code></p>
 <div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a></span>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="va">clear</span></span>
 <span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="va">data</span> <span class="op">=</span> <span class="fl">100</span> <span class="op">*</span> <span class="va">rand</span>(<span class="fl">10</span><span class="op">,</span><span class="fl">10</span>)</span>
-<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a><span class="co">% Round to nearest whole number and overwrite data variable</span></span>
-<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a><span class="va">data</span> <span class="op">=</span> <span class="va">round</span>(<span class="va">data</span>)</span></code></pre>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a><span class="co">% Round to nearest whole number and overwrite data variable</span></span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a><span class="va">data</span> <span class="op">=</span> <span class="va">round</span>(<span class="va">data</span>)</span></code></pre>
 </div>
 <p>You may be familiar with the syntax (syntax is a word typically used
 in programming to mean format) of the most basic operators from other
@@ -1696,21 +1780,24 @@ computer programs.</p>
 <span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a><span class="va">data_multiply</span> <span class="op">=</span> <span class="va">data</span> <span class="op">*</span> <span class="fl">10</span><span class="op">;</span></span></code></pre>
 </div>
 <p>One common mistake made by users of MATLAB is with the multiply
-operator. When multiplying by a single number like above the behaviour
-may be as you except.</p>
-<div id="challenge-2" class="callout challenge">
+operator. When multiplying pay attention to make sure you are getting
+the result you expect!</p>
+<div id="challenge-2-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-2" class="callout-inner">
+<div id="challenge-2-1" class="callout-inner">
 <h3 class="callout-title">Challenge 2</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
-<li>make a row vector called row with values 1, 2 &amp; 3</li>
-<li>make a column vector called column with values 4, 5 &amp; 6</li>
-<li>before trying to multiply them, guess the size of the result of
-row*column</li>
-<li>multiply row and column and see if the result is as you expect</li>
+<li>Make a row vector called <code>row</code> with values 1, 2 &amp;
+3</li>
+<li>Make a column vector called <code>column</code> with values 4, 5
+&amp; 6</li>
+<li>Before trying to multiply them, guess the size of the result of
+<code>row * column</code>
+</li>
+<li>Multiply row and column and see if the result is as you expect</li>
 </ol>
 </div>
 </div>
@@ -1720,19 +1807,26 @@ row*column</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a></span>
 <span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a><span class="va">row</span> <span class="op">=</span> [<span class="fl">1</span> <span class="fl">2</span> <span class="fl">3</span>]<span class="op">;</span></span>
-<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a><span class="va">column</span> <span class="op">=</span> [<span class="fl">4</span> <span class="fl">5</span> <span class="fl">6</span>]<span class="op">;</span></span>
-<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a><span class="va">answer</span> <span class="op">=</span> <span class="va">row</span><span class="op">*</span><span class="va">column</span></span></code></pre>
+<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a><span class="va">column</span> <span class="op">=</span> [<span class="fl">4</span><span class="op">;</span> <span class="fl">5</span><span class="op">;</span> <span class="fl">6</span>]<span class="op">;</span></span>
+<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a><span class="va">row</span> <span class="op">*</span> <span class="va">column</span></span></code></pre>
 </div>
-<p>The resulting variable should be a scalar! If you are familiar with
-matrix multiplication this may make sense to you, don’t worry if you are
-not however.</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span></span>
+<span><span class="va">ans</span> <span class="op">=</span></span>
+<span>    <span class="fl">32</span></span></code></pre>
+</div>
+<p>The resulting variable is a scalar! If you are familiar with matrix
+multiplication this may make sense to you, don’t worry if you are not
+however.</p>
 </div>
 </div>
 </div>
@@ -1741,14 +1835,14 @@ not however.</p>
 perform something called <a href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;opi=89978449&amp;url=https://www.sheffield.ac.uk/media/31960/download%3Fattachment&amp;ved=2ahUKEwi64YS815WJAxXRSkEAHUU8BNwQFnoECDUQAQ&amp;usg=AOvVaw22KRaWHu7_55Hec_tvuYxa" class="external-link">matrix
 multiplcation</a>, you don’t need to know about matrix multiplication
 but it is worth knowing it is the default behaviour.</p>
-<p>What you may expect is something called <a href="https://uk.mathworks.com/help/matlab/ref/double.times.html" class="external-link">dot
-multiplication</a></p>
-<div class="codewrapper sourceCode" id="cb16">
+<p>What you may expect to have been doing is something called <a href="https://uk.mathworks.com/help/matlab/ref/double.times.html" class="external-link">dot
+multiplication</a>.</p>
+<div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a></span>
-<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a><span class="va">row2</span> <span class="op">=</span> [<span class="fl">4</span> <span class="fl">5</span> <span class="fl">6</span>]<span class="op">;</span></span>
-<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a><span class="va">row</span><span class="op">.*</span><span class="va">row2</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a></span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a><span class="va">row2</span> <span class="op">=</span> [<span class="fl">4</span> <span class="fl">5</span> <span class="fl">6</span>]<span class="op">;</span></span>
+<span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a><span class="va">row</span><span class="op">.*</span><span class="va">row2</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1762,27 +1856,32 @@ element of both variables with each other 1 to 1. This is why it is also
 sometimes called element-wise multiplication.</p>
 </section><section><h2 class="section-heading" id="functions">Functions<a class="anchor" aria-label="anchor" href="#functions"></a>
 </h2>
+<hr class="half-width"></section><section><h2 class="section-heading" id="functions-1">Functions<a class="anchor" aria-label="anchor" href="#functions-1"></a>
+</h2>
 <hr class="half-width">
 <p>Next we will look at some key functions that you may want to use in
 data analysis and processing</p>
-<div class="codewrapper sourceCode" id="cb18">
+<div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a></span>
-<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a><span class="co">% Add together the rows in each column</span></span>
-<span id="cb18-3"><a href="#cb18-3" tabindex="-1"></a><span class="va">column_totals</span> <span class="op">=</span> <span class="va">sum</span>(<span class="va">data</span><span class="op">,</span> <span class="fl">1</span>)</span>
-<span id="cb18-4"><a href="#cb18-4" tabindex="-1"></a></span>
-<span id="cb18-5"><a href="#cb18-5" tabindex="-1"></a><span class="co">% Take the mean of the rows in each row</span></span>
-<span id="cb18-6"><a href="#cb18-6" tabindex="-1"></a><span class="va">row_means</span> <span class="op">=</span> <span class="va">mean</span>(<span class="va">data</span><span class="op">,</span> <span class="fl">2</span>)</span>
-<span id="cb18-7"><a href="#cb18-7" tabindex="-1"></a></span>
-<span id="cb18-8"><a href="#cb18-8" tabindex="-1"></a><span class="co">% Find the maximum value in each column</span></span>
-<span id="cb18-9"><a href="#cb18-9" tabindex="-1"></a><span class="va">data_max</span> <span class="op">=</span> <span class="va">max</span>(<span class="va">data</span>)</span>
-<span id="cb18-10"><a href="#cb18-10" tabindex="-1"></a></span>
-<span id="cb18-11"><a href="#cb18-11" tabindex="-1"></a><span class="co">% Find the minimum value in each row</span></span>
-<span id="cb18-12"><a href="#cb18-12" tabindex="-1"></a><span class="va">data_min</span> <span class="op">=</span> <span class="va">min</span>(<span class="va">data</span><span class="op">,</span> []<span class="op">,</span> <span class="fl">2</span>)</span>
-<span id="cb18-13"><a href="#cb18-13" tabindex="-1"></a></span>
-<span id="cb18-14"><a href="#cb18-14" tabindex="-1"></a><span class="co">% Find the maximum value of the entire matrix</span></span>
-<span id="cb18-15"><a href="#cb18-15" tabindex="-1"></a><span class="va">data_max_all</span> <span class="op">=</span> <span class="va">max</span>(<span class="va">data</span><span class="op">,</span> []<span class="op">,</span> <span class="st">"all"</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a></span>
+<span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a><span class="co">% Find the size of a matrix</span></span>
+<span id="cb19-3"><a href="#cb19-3" tabindex="-1"></a><span class="va">matrix_size</span> <span class="op">=</span> <span class="va">size</span>(<span class="va">data</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" tabindex="-1"></a><span class="co">% Add together the rows in each column</span></span>
+<span id="cb19-6"><a href="#cb19-6" tabindex="-1"></a><span class="va">column_totals</span> <span class="op">=</span> <span class="va">sum</span>(<span class="va">data</span><span class="op">,</span> <span class="fl">1</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" tabindex="-1"></a></span>
+<span id="cb19-8"><a href="#cb19-8" tabindex="-1"></a><span class="co">% Take the mean of the rows in each row</span></span>
+<span id="cb19-9"><a href="#cb19-9" tabindex="-1"></a><span class="va">row_means</span> <span class="op">=</span> <span class="va">mean</span>(<span class="va">data</span><span class="op">,</span> <span class="fl">2</span>)</span>
+<span id="cb19-10"><a href="#cb19-10" tabindex="-1"></a></span>
+<span id="cb19-11"><a href="#cb19-11" tabindex="-1"></a><span class="co">% Find the maximum value in each column</span></span>
+<span id="cb19-12"><a href="#cb19-12" tabindex="-1"></a><span class="va">data_max</span> <span class="op">=</span> <span class="va">max</span>(<span class="va">data</span>)</span>
+<span id="cb19-13"><a href="#cb19-13" tabindex="-1"></a></span>
+<span id="cb19-14"><a href="#cb19-14" tabindex="-1"></a><span class="co">% Find the minimum value in each row</span></span>
+<span id="cb19-15"><a href="#cb19-15" tabindex="-1"></a><span class="va">data_min</span> <span class="op">=</span> <span class="va">min</span>(<span class="va">data</span><span class="op">,</span> []<span class="op">,</span> <span class="fl">2</span>)</span>
+<span id="cb19-16"><a href="#cb19-16" tabindex="-1"></a></span>
+<span id="cb19-17"><a href="#cb19-17" tabindex="-1"></a><span class="co">% Find the maximum value of the entire matrix</span></span>
+<span id="cb19-18"><a href="#cb19-18" tabindex="-1"></a><span class="va">data_max_all</span> <span class="op">=</span> <span class="va">max</span>(<span class="va">data</span><span class="op">,</span> []<span class="op">,</span> <span class="st">"all"</span>)</span></code></pre>
 </div>
 
 <div id="challenge-3" class="callout discussion">
@@ -1797,12 +1896,12 @@ compare rainfall data between Sheffield and India</p>
 <ol style="list-style-type: decimal">
 <li>Load the datasets from files</li>
 </ol>
-<div class="codewrapper sourceCode" id="cb19">
+<div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="co">% Import rainfall data. </span></span>
-<span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a><span class="va">Sheffield_Rain</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'Sheffield_Rain.csv'</span>)<span class="op">;</span></span>
-<span id="cb19-3"><a href="#cb19-3" tabindex="-1"></a><span class="va">India_Rain</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'SouthIndia_Rainfall.csv'</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="co">% Import rainfall data. </span></span>
+<span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a><span class="va">Sheffield_Rain</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'Sheffield_Rain.csv'</span>)<span class="op">;</span></span>
+<span id="cb20-3"><a href="#cb20-3" tabindex="-1"></a><span class="va">India_Rain</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'SouthIndia_Rainfall.csv'</span>)<span class="op">;</span></span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>Investigate the data, open it up in the workspace and understand
