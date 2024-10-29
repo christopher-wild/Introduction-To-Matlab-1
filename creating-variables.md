@@ -1,5 +1,5 @@
 ---
-title: 'Variables and Dimensions'
+title: 'Creating Variables'
 teaching: 10
 exercises: 2
 ---
@@ -40,7 +40,6 @@ The value of a variable in MATLAB can be many things! Some examples are
 |Matrix| [1 2 3; 4 5 6]|
 |Logical| True, False|
 
-## TODO: variable naming convention
 
 As mentioned in the previous episode, MATLAB has a section called the workspace, this is where you can view what Variables are in-memory. The most simple way of creating a variable is with the '=' symbol, for example:
 ```
@@ -69,7 +68,6 @@ MATLAB (like most programming languages), holds variables in-memory. This means 
 ![](fig/workspace.png){alt="A screenshot of the MATLAB workspace with 3 variables in it from the challenge"}
 :::
 :::
-
 ::: spoiler
 ### Data Types
 You may notice in the previous solution there is a type called a 'double'. MATLAB is whats known as a dynamically typed language, which is also called the fun duck typing. This is based off the saying 'if it walks like a duck and quacks like a duck it's probably a duck'. In programming terms this means that when you make a variable MATLAB has a look at it and assumes what type it is based on how it looks. Other languages like C++ require you to explicitly tell the program what type every variable is.
@@ -77,9 +75,25 @@ You may notice in the previous solution there is a type called a 'double'. MATLA
 For you as a user, this means that you don't have to really know or pay attention to data types! However it is worth knowing they exist, as if you get more advanced you may want to manipulate them to optimise your algorithms or some other advanced use cases.
 :::
 
+
+## Variable Names
+
+There are several conventions for naming variables, such as camel case, where each word is joined without a space and each new word starts with a capital letter. For example `camelCase` or `analysisResult`
+
+Snake case is another common standard, where each word is lower case and separated with underscores, for example `snake_case` or `analysis_results`. 
+
+Both standards will work well, if you're working with existing code or on an existing project it is normally best to stick with the convention already in use!
+
+::: callout
+### Useful Variable Names
+
+In this lesson we are using variable names without any meaning such as A or B. When programming code it is good practice to use meaningful unique names for your variables.
+
+:::
+
 ## Dimensions
 
-A lot of data analysis, processing and workflows wont be with single numbers but with large multidimensional datasets. Working with image/video, timeseries, tables or many other data sources can quickly make your incoming data large in size. Variables in MATLAB can and are very good at storing and working with multidimensional data. 
+A lot of data analysis, processing and workflows wont be with single numbers but with large multidimensional datasets. Working with image/video, time series, tables or many other data sources can quickly make your incoming data large in size. Variables in MATLAB can and are very good at storing and working with multidimensional data. 
 
 
 ::: challenge
@@ -131,16 +145,22 @@ In general when creating multidimensional variables you
 - separate columns with a space ` `
 - separate rows with a semi-colon `;`
 
-## TODO: make this read nicer, all in challenge?
+Here are some examples of creating vector variables:
+
+``` MATLAB
+E = [1 2 3] # 1x3 row vector named E 
+F = [4;5;6] # 3x1 column vector called F
+```
 ::: challenge
 
-1. Create a 1x3 row vector named E: `E = [1 2 3]`
-2. Create a 3x1 column vector called F with values 4 to 6: `F = [4;5;6]`
-3. Create a 2x2 matrix called G with values 10, 20, 30 & 40.
+1. Create a row vector called G with values 2, 4 & 6
+2. Create a column vector called H with values 1, 3 & 5
+3. Create a 2x2 matrix called I with values 10, 20, 30 & 40.
 
 ::: solution
-
-Solution to 3. is `G = [10 20; 30 40]`
+1. `G = [2 4 6]`
+2. `H = [1;3;5]`
+3. `I = [10 20; 30 40]`
 
 :::
 :::
