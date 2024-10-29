@@ -70,14 +70,15 @@ What is the output of this command?
 
 ::: instructor
 
-May be worth explaining that '*' is used for multiplication in many programming languages and '/' for divide
+May be worth explaining that `*` is used for multiplication in many programming languages and `/` for divide
+Explain `ans =` - or at least mention this will be covered later.
 
 :::
 
 ::: challenge
 ### Challenge 2: Using the editor
 
-Press 'New' at the top left and type the following into your editor. Then press 'Run' in the EDITOR tab at the top.
+Press 'New Script' at the top left and type the following into your editor. Then press 'Run' in the EDITOR tab at the top.
 
 ```
 b = 136 / 8
@@ -88,17 +89,17 @@ b = 136 / 8
 
 ::: solution
 
-1. The editor modifies and runs a MATLAB file (m-file), so in order to run what is in the editor you will be required to create and save a file.
+1. The editor modifies and runs a MATLAB file (m-file), so in order to run what is in the editor you will be required to save the script you have made to a new m-file.
 
 2. 17
 :::
 :::
-As you saw in the challenge above, using the command window requires you to create and save a file with the extension `.m`. This means that when you next come to do your analysis, processing, etc. you can reopen this file and work from it again. 
+As you saw in the challenge above, using the editor requires you to create and save a file with the extension `.m`. This means that when you next come to do your analysis, processing, etc., you can reopen this file and continue work from it again. 
 
 ::: callout
 ### Saving your work
 
-Unlike the editor, any work done in the command window is not saved! This means that if you close MATLAB or your computer this work will be lost. Hence why you should use it only for quick temporary tasks
+Unlike the editor, any work done in the command window is not saved! This means that if you close MATLAB or your computer this work will be lost. Hence why you should use it only for quick temporary tasks.
 :::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
