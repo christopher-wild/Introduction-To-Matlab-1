@@ -160,8 +160,6 @@ One advantage of using `cat` is that it can work for arrays of larger dimensions
 
 ### Challenge 1
 
-### Challenge 1
-
 1. Extract every other row from Data assign it to the varibale name `subset_a`
 
 2. Extract the first four rows from the 2nd column of Data and call it `subset_b`
@@ -224,8 +222,6 @@ One common mistake made by users of MATLAB is with the multiply operator. When m
 
 ### Challenge 2
 
-### Challenge 2
-
 1. Make a row vector called `row` with values 1, 2 & 3
 2. Make a column vector called `column` with values 4, 5 & 6
 3. Before trying to multiply them, guess the size of the result of `row * column`
@@ -269,7 +265,6 @@ ans =
 As the example above shows, dot multiplication multiplies each element of both variables with each other 1 to 1. This is why it is also sometimes called element-wise multiplication.
 
 ## Functions
-## Functions
 
 Next we will look at some key functions that you may want to use in data analysis and processing
 
@@ -299,31 +294,74 @@ data_max_all = max(data, [], "all")
 It is worth exploring why the square brackets exist here, demoing using the help or doc command to find why that exists and use it as a learning example.
 :::
 
-::: challenge
+## Indian Rainfall Example
 
-### challenge 3
+In this example we will combine the tools we have learnt so far to compare rainfall data between Sheffield and India
 
-In this challenge we will combine the tools we have learnt so far to compare rainfall data between Sheffield and India
+Each dataset comprises of monthly rainfall averages per year from 1901-2014.
 
-1. Load the datasets from files
+Sheffield (https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/sheffielddata.txt) 
+Peninsular India (https://www.tropmet.res.in/DataArchival-51-Page) 
+
 ``` MATLAB
 % Import rainfall data. 
-Sheffield_Rain = load('Sheffield_Rain.csv');
-India_Rain = load('SouthIndia_Rainfall.csv');
+sheffield_data = load('Sheffield_Rain.csv');
+india_data = load('SouthIndia_Rainfall.csv');
 ```
 
-2. Investigate the data, open it up in the workspace and understand what is in each column
+::: challenge
 
-3 
+Investigate the data, open it up in the workspace and think about what is in each column
+
+::: solution
+
+Each dataset contains 13 columns, the first column is the year and the other 12 are for each month of the year
 
 :::
 
+:::
+
+
+::: challenge
+1. Create a subset of `sheffield_data` and `india_data` that contains only the rain data, call these subsets `sheffield_rain` and `india_rain`
+
+2. The Indian rainfall series is in tenths of a millimeter. Convert to millimeters by dividing each point by 10
+
+3. The columns contain monthly rainfall, find the average monthly rainfall over the 114 years. Call these new variables `india_monthly` and `sheffield_monthly`
+
+::: solution
+
+``` MATLAB
+% Select all data except the first column
+sheffield_rain = sheffield_data(:,2:end);
+india_rain = india_data(:,2:end); 
+
+% Convert india_rain to millimeters
+india_rain = india_rain/10;
+
+% Take the mean of each column to find the average monthly rainfall
+sheffield_monthly = mean(sheffield_rain, 1);
+india_mothly = mean(india_rain, 1);
+```
+
+:::
+
+:::
+
+If your `sheffield_monthly` and `india_monthly` variables are correctly made, you should be able to run the following code to generate a bar chart comparing the two average rainfalls.
+
+``` MATLAB
+bar([1:12],cat(1, India_Monthly, Sheffield_Monthly),'grouped')
+legend('South India', 'Sheffield')
+ylabel('Rainfall (mm)')
+```
+
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- Variables 
+- Use functions to create, edit and operate on variables
+- 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

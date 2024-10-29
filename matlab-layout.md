@@ -36,7 +36,7 @@ Don't worry if your layout does not match the one in the diagram. The MATLAB app
 Each number on the diagram describes:
 
 1. Menu Ribbon - This bar functions much like the bars at the top of many Microsoft and Google applications you may be familiar with, it has tabs with different options in. Throughout this course we will be exploring some of these tabs in more detail.
-2. Current Folder - Here you can explore the files on your computer much like the explorer on your computer. The folder currently showing is is also known as the 'Working Directory' and this is where MATLAB will first search for files.
+2. Current Folder - Here you can explore the files on your computer much like the explorer on your computer. The folder currently showing is also known as the 'Working Directory' and this is where MATLAB will first search for files.
 3. Editor - This is where you will edit MATLAB code files.
 4. Command Window - One off MATLAB commands can be executed here.
 5. Workspace - You will be able to see any variables that are currently in memory here
