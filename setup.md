@@ -2,53 +2,18 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+This is a newly built lesson to introduce academics at the University of Sheffield to MATLAB. It is built using the [Carpentries Workbench](https://carpentries.github.io/sandpaper-docs/)
 
 ## Data Sets
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+For this lesson you will require 2 datasets available from Google Drive:
+[Sheffield Rain](https://drive.google.com/file/d/18t1hnEpIaTtEHigk4HLY92C98MOBaMKO/view?usp=drive_link)
+[India Rain](https://drive.google.com/file/d/1ZtwwQorKcxIi1pkNSqkwbBiGHOPFeOQp/view?usp=drive_link)
+
+You don't need to do anything but download them onto your computer before the lesson.
 
 ## Software Setup
 
-::::::::::::::::::::::::::::::::::::::: discussion
-
-### Details
-
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### Windows
-
-Use PuTTY
-
-::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### MacOS
-
-Use Terminal.app
-
-::::::::::::::::::::::::
-
-
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
+It is preferable if you could bring your own machine with MATLAB downloaded onto it. Instructions on how to download MATLAB can be found here:
+https://students.sheffield.ac.uk/it-services/software/matlab
 
