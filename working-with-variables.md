@@ -359,9 +359,8 @@ ylabel('Rainfall (mm)')
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Variables 
 - Use functions to create, edit and operate on variables
-- 
-
+- Operations are used to perform simple mathematical functions
+- help and docs are valuable tools for understanding functions
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
