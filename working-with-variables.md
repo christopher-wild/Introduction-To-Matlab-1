@@ -180,10 +180,10 @@ subset_b = data(1:4,2)
 subset_t = subset_b'
 
 % Concatenate subset_a and subset_t along the first dimension
-new_data3 = cat(1, subset_a, subset_t)
+subset_concatenated = cat(1, subset_a, subset_t)
 ```
 
-`new_data3` should be of size 4x4
+`subset_concatenated` should be of size 4x4
 
 :::
 :::
@@ -351,7 +351,7 @@ india_mothly = mean(india_rain, 1);
 If your `sheffield_monthly` and `india_monthly` variables are correctly made, you should be able to run the following code to generate a bar chart comparing the two average rainfalls.
 
 ``` MATLAB
-bar([1:12],cat(1, India_Monthly, Sheffield_Monthly),'grouped')
+bar([1:12],cat(1, india_mothly, sheffield_monthly),'grouped')
 legend('South India', 'Sheffield')
 ylabel('Rainfall (mm)')
 ```

@@ -298,10 +298,10 @@ Here are some common scenarios where NaN may be used:
 2. Create a matrix of random numbers with 4 rows and 5 columns, call it `ii`
 
 ::: solution
-``` MATLAB
-1. `h = 12:4:100`
-2. `ii = linspace(12,100,23)`
-```
+
+1. `h = 12:4:100` or `h = linspace(12,100,23)`
+2. `ii = rand(4,5)`
+
 :::
 
 :::
