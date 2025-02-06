@@ -341,7 +341,7 @@ india_rain = india_rain/10;
 
 % Take the mean of each column to find the average monthly rainfall
 sheffield_monthly = mean(sheffield_rain, 1);
-india_mothly = mean(india_rain, 1);
+india_monthly = mean(india_rain, 1);
 ```
 
 :::

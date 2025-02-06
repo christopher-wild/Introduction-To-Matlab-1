@@ -185,7 +185,7 @@ Simply putting `clear` into your command window will clear all variables
 `clear A` will clear just the variable called `A`
 
 **Clear command window**
-## TODO clearup history
+
 After working a while you will have a long history of commands in your command window, you can clear this up by running the `clc` (command line clear) command.
 
 ::: callout
