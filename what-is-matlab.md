@@ -70,7 +70,7 @@ MATLAB is considered to be on the high-level end of languages, making it relativ
 ::: keypoints 
 
 - MATLAB is used in many fields and can be used to analysis, process, model and much more
-- 
+- MATLAB is proprietary which has its own benefits and costs
 
 :::
 
