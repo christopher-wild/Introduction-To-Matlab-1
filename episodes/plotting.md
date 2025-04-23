@@ -14,8 +14,7 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Demonstrate how to create plots in MATLAB that have titles, labelled axis and multiple lines
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
-
+- Understand how to use line styles and markers to make plots clearer
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Plot Function
@@ -28,6 +27,11 @@ the plotting syntax of MATLAB and how we can explore figures.
 
 Create a basic 2D line plot with the following variables
 
+::: instructor
+
+Good place to demonstrate the interactivity of MATLAB figures. Show zooming, saving, etc.
+
+:::
 ``` MATLAB
 
 x = [1 2 3 4 5];
@@ -90,6 +94,15 @@ plot(x,y2, '+-r')
 ![](fig/plot_markers.png){alt="A screenshot of a MATLAB figure containing both a straight and curved line"}
 :::
 :::
+
+::: callout
+There are many other 2D plot types available in MATLAB which mostly use a very similar syntax to `plot`, such as:
+
+bar, histogram, scatter, heatmap and more. The full list can be found [here](https://uk.mathworks.com/help/matlab/creating_plots/types-of-matlab-plots.html)
+
+:::
+
+
 ## Figure Labelling
 
 Titles, axis labels and legends are useful tools to make your plots more readable, and are essential to a plot if it is being added to a paper or journal.
@@ -105,12 +118,25 @@ legend('Straight', 'Exponential')
 ```
 ![](fig/plot3.png){alt="A screenshot of a MATLAB figure with a title, axis labels and a legend"}
 
+
+
+
+## 3D Plotting
+
+Here we are going to use a MATLAB function called peaks, which is a useful function for demonstrating 3D figures. It generates a matrix containing peaks obtained from a Gaussian distribution.
+
+```
+z = peaks(50);
+surf(z)
+```
+
+![](fig/plot_surf.png){alt="A screenshot of a MATLAB figure containing a 3D surface plot with peaks"}
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- Figures in MATLAB are by default interactive
+- Hold on is needed to place multiple plots on the same figure
+- Label and title your plots for extra clarity
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
