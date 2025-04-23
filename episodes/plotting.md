@@ -23,9 +23,8 @@ exercises: 2
 MATLAB has an inbuilt function called `plot` that creates 2-D line plots. We will start by exploring how to use this function to get used to
 the plotting syntax of MATLAB and how we can explore figures.
 
-::: challenge
 
-## Basic Plot
+### Basic Plot
 
 Create a basic 2D line plot with the following variables
 
@@ -38,13 +37,7 @@ plot(x,y1)
 
 ```
 
-::: solution
-
 ![](fig/plot1.png){alt="A screenshot of a MATLAB figure containing a straight line"}
-
-:::
-:::
-
 
 ### hold on
 
@@ -70,6 +63,47 @@ Create another vector variable called y2 with values 1, 4, 9, 16, 25
 
 :::
 :::
+
+### Line and Marker Styling
+MATLAB offers a range of line colours and markers which can help distinguish lines or theme them.
+
+Here are links to the [line style](https://uk.mathworks.com/help/matlab/creating_plots/specify-line-and-marker-appearance-in-plots.html) and [plot colour](https://uk.mathworks.com/help/matlab/creating_plots/specify-plot-colors.html) guides.
+
+::: challenge
+## Styled plots
+
+Close any currently open figures and use the guides above to plot the following lines:
+
+1. Plot y1 against x with a dashed line
+2. Plot y2 against x using a red solid line with plus markers
+
+::: solution
+
+``` MATLAB
+
+plot(x,y1, '--')
+hold on
+plot(x,y2, '+-r')
+
+```
+
+![](fig/plot_markers.png){alt="A screenshot of a MATLAB figure containing both a straight and curved line"}
+:::
+:::
+## Figure Labelling
+
+Titles, axis labels and legends are useful tools to make your plots more readable, and are essential to a plot if it is being added to a paper or journal.
+
+
+``` MATLAB
+title('Comparison of 2 lines)
+
+xlabel('X Numbers')
+ylabel('Y Numbers')
+
+legend('Straight', 'Exponential')
+```
+![](fig/plot3.png){alt="A screenshot of a MATLAB figure with a title, axis labels and a legend"}
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
