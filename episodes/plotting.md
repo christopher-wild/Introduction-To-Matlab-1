@@ -109,7 +109,7 @@ Titles, axis labels and legends are useful tools to make your plots more readabl
 
 
 ``` MATLAB
-title('Comparison of 2 lines)
+title('Comparison of 2 lines')
 
 xlabel('X Numbers')
 ylabel('Y Numbers')
