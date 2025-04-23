@@ -8,7 +8,13 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
+# Note that you can also use a custom carpentry type. For more info,
+# see the documentation: https://carpentries.github.io/sandpaper-docs/editing.html
 carpentry: 'university_of_sheffield'
+
+# Custom carpentry description
+# This will be used as the alt text for the logo
+# carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
 title: 'Introduction to Matlab 1'
@@ -58,20 +64,21 @@ contact: 'research-it@sheffield.ac.uk'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes:
+episodes: 
 - what-is-matlab.md
 - matlab-layout.md
 - creating-variables.md
 - working-with-variables.md
+- plotting.md
 
 # Information for Learners
-learners:
+learners: 
 
 # Information for Instructors
-instructors:
+instructors: 
 
 # Learner Profiles
-profiles:
+profiles: 
 
 # Customisation ---------------------------------------------
 #
