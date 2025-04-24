@@ -7,14 +7,16 @@ exercises: 2
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - How can I make my code do different things when variables change?
-- How can I reuse code in a loop?
+- How can I compare values in an array to other values?
+- What are the different types of loop and how can they be controlled?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Learn to use relational operators to compare values
+- Understand if and else statements to create conditional code
+- Understand the main types of loop and when they should be used
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -183,18 +185,88 @@ Also think back to previous episodes where we covered indexes and counting in st
 ``` MATLAB
 total = 0
 for ii 0:2:20
-  total = total + ii
+  total = total + ii;
 end
 ```
 :::
 :::
 
+### While Loops
+
+As previously mentioned, while loops will loop while a logical condition is being met. 
+
+``` MATLAB
+ii = 0
+while ii < 10
+  ii = ii + 1;
+end
+```
+
+Interestingly, as 1 is logic true in MATLAB, the following loop will run until cancelled or MATLAB runs out of resources
+
+
+::: callout
+## Cancel execution
+While loops can get stuck in an infinite cycle, to stop this running without shutting MATLAB you can press Ctrl+C or on Mac Ctrl+Break
+:::
+
+``` MATLAB
+ii = 0
+while 1
+  ii = ii + 1;
+end
+```
+
+While loops are useful when you don't know how many iterations are needed. Some common use cases are:
+
+- Iterative Algorithms: Gradient-descent in machine learning, power series
+- Event driven: Continuously reading from a sensor, waiting for user input
+
+
+### Loop Controls
+
+`break` and `continue` are statements that can be used to control behavior in a loop
+
+The `break` statement immediately exits the loop it's in, skipping any remaining iterations. Execution continues with the next statement after the loop.
+
+``` MATLAB
+for ii = 1:10
+    if ii == 5
+        break;
+    end
+    disp(ii);
+end
+disp('Loop finished');
+```
+``` OUTPUT
+1
+2
+3
+4
+Loop finished
+```
+
+The `continue` statement skips the remaining code in the current iteration and jumps to the next iteration of the loop.
+
+``` MATLAB
+for ii = 1:8
+    if mod(ii, 2) == 0 % Check for even numbers
+        continue; 
+    end
+    disp(ii);
+end
+```
+``` OUTPUT
+1
+3
+5
+7
+```
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- if, elseif and else can be used to create powerful conditions
+- for loops for when you know how many iterations to loop, while loops when you don't
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
