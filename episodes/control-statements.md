@@ -184,7 +184,7 @@ Also think back to previous episodes where we covered indexes and counting in st
 
 ``` MATLAB
 total = 0
-for ii 0:2:20
+for ii = 0:2:20
   total = total + ii;
 end
 ```
