@@ -154,9 +154,9 @@ end
 
 ``` MATLAB
 A = 1:5;
-for ii in A
+for ii = A
   disp(ii)
-```
+end
 
 ``` OUTPUT
 1
