@@ -112,6 +112,83 @@ end
 ```
 :::
 :::
+
+### if else elseif
+
+Conditions can be chained together using the `else` and `elseif` terms. This allows for multiple different code blocks to be used depending on multiple conditions.
+
+``` MATLAB
+if all(student_marks(:,2) >= 70)
+  disp('All students have a first in subject 2')
+elseif any(student_marks(:,2) >= 70)
+  disp('At least 1 student has a first in subject 2')
+else
+  disp('No students have a first in subject 2')
+end
+```
+
+## Loops
+
+Loops in coding allow for blocks of code to be executed multiple times depending on some logic. 
+This can save you from having redundant copy and pasted code, making your code shorter and easier to read.
+
+There are two main loop types in MATLAB, for loops and while loops. 
+A for loop repeats a specified number of times, a while loop repeats until a logical condition is met.
+
+
+### For Loops
+
+For loops have the following syntax
+
+```
+for index = values
+  code
+end
+```
+
+`values` is typically a vector where the length will define the number of repetitions
+
+`index` will be the current value of values for this iteration. In the exaple below,
+
+``` MATLAB
+A = 1:5;
+for ii in A
+  disp(ii)
+```
+
+``` OUTPUT
+1
+2
+3
+4
+5
+```
+
+In this example our `values` is `1:5` which if you remember from indexing produces a vector `[1 2 3 4 5]`
+
+So our for loop, loops 5 times, the first loop our index `ii` will be 1, then 2, etc.
+
+::: challenge
+
+Create a for loop that sums the even numbers in the range 0 to 20. 
+
+::: hint
+Try creating another variable called total equal to 0, for each iteration of the loop add the current index
+
+Also think back to previous episodes where we covered indexes and counting in steps
+:::
+
+::: solution
+
+``` MATLAB
+total = 0
+for ii 0:2:20
+  total = total + ii
+end
+```
+:::
+:::
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 - Use `.md` files for episodes when you want static content
