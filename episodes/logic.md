@@ -1,5 +1,5 @@
 ---
-title: 'logic'
+title: 'Logic'
 teaching: 10
 exercises: 2
 ---
@@ -8,6 +8,7 @@ exercises: 2
 
 - How can I make my code do different things when variables change?
 - How can I compare values in an array to other values?
+- How can I select subsets of my data depending on a comparison?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -15,6 +16,7 @@ exercises: 2
 
 - Learn to use relational operators to compare values
 - Understand if and else statements to create conditional code
+- Learn some new tools and functions relating to logic
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -127,9 +129,101 @@ else
 end
 ```
 
+## Logical Indexing
+
+In the working with variables chapter, we looked at how we can index a variable with row and column numbers.
+
+``` MATLAB
+data = [1 3 5 7; 2 4 6 8];
+data(2,4)
+```
+``` OUTPUT
+8
+```
+
+Here we will look at indexing using logic arrays, which going back are the result of relational operators.
+
+
+``` MATLAB
+big_data = data >= 4 
+
+data(big_data)
+```
+``` OUTPUT
+ans =
+
+     4
+     5
+     6
+     7
+     8
+```
+First we create a logical array called `big_data`, which is the result of us looking for numbers in our data greater than or equal to 4.
+
+We can then use this to index data, like slicing by index number, the result being only the part of data that is bigger than 4.
+
+These two lines can be combined as well, avoiding the need to save the logical array as it's own variable
+
+``` MATLAB
+data(data >= 4)
+```
+``` OUTPUT
+ans =
+
+     4
+     5
+     6
+     7
+     8
+```
+
+### logical not
+
+A useful tool when handling logical arrays is the logical not, represented with the `~` symbol.
+
+This operation inverts a logical array, which can be used to find values that don't meet a condition. 
+
+``` MATLAB
+
+big_data = data >= 4;
+disp(big_data)
+disp(~big_data)
+```
+
+``` OUTPUT
+   0   0   1   1
+   0   1   1   1
+
+   1   1   0   0
+   1   0   0   0
+```
+
+### isnan
+
+The final the we will look at in this episode is the `isnan` function. This function returns a logical array containing true (1) where there is a NaN in the array.
+
+This could be used to replace the NaN values with a default value like 0, or combined with the logical not to only select non-nan data:
+
+``` MATLAB
+data = [2 4 NaN 8; 1 NaN 5 7];
+
+data = data(~isnan(data))
+```
+
+``` OUTPUT
+data =
+
+     2
+     1
+     4
+     5
+     8
+     7
+```
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
+- The result of a relational operator is a logical array
 - if, elseif and else can be used to create powerful conditions
-
+- Logical arrays can be used to index variables
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
