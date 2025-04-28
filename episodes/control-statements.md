@@ -7,7 +7,9 @@ exercises: 2
 :::::::::::::::::::::::::::::::::::::: questions 
 
 
-- What are the different types of loop and how can they be controlled?
+- What are the different types of loop?
+- How can you control loops to exit early or skip iterations?
+- How can you loop over multiple objects at the same time?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -15,12 +17,11 @@ exercises: 2
 
 
 - Understand the main types of loop and when they should be used
+- Learn about loop controls such as break and continue
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-
-## Loops
 
 Loops in coding allow for blocks of code to be executed multiple times depending on some logic. 
 This can save you from having redundant copy and pasted code, making your code shorter and easier to read.
@@ -29,7 +30,7 @@ There are two main loop types in MATLAB, for loops and while loops.
 A for loop repeats a specified number of times, a while loop repeats until a logical condition is met.
 
 
-### For Loops
+## For Loops
 
 For loops have the following syntax
 
@@ -82,7 +83,7 @@ end
 :::
 :::
 
-### While Loops
+## While Loops
 
 As previously mentioned, while loops will loop while a logical condition is being met. 
 
@@ -114,7 +115,7 @@ While loops are useful when you don't know how many iterations are needed. Some 
 - Event driven: Continuously reading from a sensor, waiting for user input
 
 
-### Loop Controls
+## Loop Controls
 
 `break` and `continue` are statements that can be used to control behavior in a loop
 
@@ -154,10 +155,35 @@ end
 7
 ```
 
+## Nested Loops
+
+You may come across a situation when programming where you need to need to process every element of one dataset against every element of another.
+This scenario is often tackled using a nested loop, where you have one for loop inside of another.
+
+This example will each number from 2 indexes against each other and display both the current iterators and the result per loop.
+
+``` MATLAB
+for ii=1:3
+  for jj=10:10:30
+    ii
+    jj
+    ii*jj
+  end
+end
+```
+
+::: callout
+
+Nested loops are powerful tools but avoid nesting unnecessarily. Code nested 3 or 4 loops deep can be hard to understand and read.
+
+:::
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 
-- for loops for when you know how many iterations to loop, while loops when you don't
+- Use for loops for when you know how many iterations to loop, while loops when you don't
+- Break and continue allow you to exit or skip loops
+- Use indents to keep looped code clear
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
