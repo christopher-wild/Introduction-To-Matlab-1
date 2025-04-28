@@ -64,22 +64,24 @@ contact: 'research-it@sheffield.ac.uk'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
+episodes:
 - what-is-matlab.md
 - matlab-layout.md
 - creating-variables.md
 - working-with-variables.md
 - plotting.md
+- logic.md
 - control-statements.md
 
+
 # Information for Learners
-learners: 
+learners:
 
 # Information for Instructors
-instructors: 
+instructors:
 
 # Learner Profiles
-profiles: 
+profiles:
 
 # Customisation ---------------------------------------------
 #
