@@ -160,7 +160,7 @@ end
 You may come across a situation when programming where you need to need to process every element of one dataset against every element of another.
 This scenario is often tackled using a nested loop, where you have one for loop inside of another.
 
-This example will each number from 2 indexes against each other and display both the current iterators and the result per loop.
+This example multiplies each number from two ranges against each other, displaying the current iterators and the resulting product for each loop.
 
 ``` MATLAB
 for ii=1:3

@@ -200,8 +200,7 @@ disp(~big_data)
 
 ### isnan
 
-The final the we will look at in this episode is the `isnan` function. This function returns a logical array containing true (1) where there is a NaN in the array.
-
+The final thing we will look at in this episode is the `isnan` function. This function returns a logical array containing true (1) where there is a NaN in the array.
 This could be used to replace the NaN values with a default value like 0, or combined with the logical not to only select non-nan data:
 
 ``` MATLAB
