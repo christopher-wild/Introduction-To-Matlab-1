@@ -2,8 +2,6 @@
 title: Setup
 ---
 
-This is a newly built lesson to introduce academics at the University of Sheffield to MATLAB. It is built using the [Carpentries Workbench](https://carpentries.github.io/sandpaper-docs/)
-
 ## Data Sets
 
 For this lesson you will require 2 datasets available from Google Drive:
