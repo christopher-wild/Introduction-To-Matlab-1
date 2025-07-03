@@ -15,3 +15,5 @@ You don't need to do anything but download them onto your computer before the le
 It is preferable if you could bring your own machine with MATLAB downloaded onto it. Instructions on how to download MATLAB can be found here:
 https://students.sheffield.ac.uk/it-services/software/matlab
 
+If MATLAB is not installed on the computer you are using for the session, [MATLAB Online](https://www.mathworks.com/products/matlab-online.html) allows you to use MATLAB in your browser.
+However some UI features will vary slightly.
