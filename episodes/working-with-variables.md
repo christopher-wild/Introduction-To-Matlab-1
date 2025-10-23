@@ -351,7 +351,7 @@ india_monthly = mean(india_rain, 1);
 If your `sheffield_monthly` and `india_monthly` variables are correctly made, you should be able to run the following code to generate a bar chart comparing the two average rainfalls.
 
 ``` MATLAB
-bar([1:12],cat(1, india_mothly, sheffield_monthly),'grouped')
+bar([1:12],cat(1, india_monthly, sheffield_monthly),'grouped')
 legend('South India', 'Sheffield')
 ylabel('Rainfall (mm)')
 ```
