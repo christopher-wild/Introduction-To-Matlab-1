@@ -4,7 +4,7 @@ title: Setup
 
 ## Data Sets
 
-For this lesson you will require 2 datasets available from Google Drive:
+For this lesson you will require 2 datasets:
 [Sheffield Rain][shef_csv]
 [India Rain][india_csv]
 
@@ -21,3 +21,4 @@ However some UI features will vary slightly.
 
 [shef_csv]: data/Sheffield_Rain.csv
 [india_csv]: data/SouthIndia_Rainfall.csv
+

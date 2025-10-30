@@ -64,6 +64,30 @@ dir('*.mat')  % Lists all MATLAB data files
 ```
 
 
+## Loading Files
+
+### Text and CSV Files
+
+MATLAB can easily read CSV (comma separated value), other text files and spreadsheets using `readmatrix`:
+
+```matlab
+sheffield_rain = readmatrix('Sheffield_Rain.csv')
+```
+
+### MATLAB Data Files
+
+MATLAB has its own file format with the `.mat` extension. These files can store multiple variables efficiently:
+
+```matlab
+load('rain_data.mat')  % Loads all variables from the file
+```
+
+You can also load specific variables:
+
+```matlab
+load('rain_data.mat', 'india_data')
+```
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 - pass
