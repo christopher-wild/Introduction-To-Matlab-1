@@ -1,4 +1,4 @@
-# Introduction to Matlab 1
+# Introduction to Matlab
 
 Learning [MATLAB](https://uk.mathworks.com/products/matlab.html) is a valuable asset for enhancing research due to its specialised capabilities for data analysis, numerical simulation, and algorithm development. Proficiency in MATLAB equips researchers with a versatile skill set applicable across disciplines, fostering innovation and efficient problem-solving. Its industry relevance also opens doors to diverse career opportunities.
 
