@@ -4,9 +4,9 @@ title: Setup
 
 ## Data Sets
 
-For this lesson you will require 2 datasets available from Google Drive:
-[Sheffield Rain](https://drive.google.com/file/d/18t1hnEpIaTtEHigk4HLY92C98MOBaMKO/view?usp=drive_link)
-[India Rain](https://drive.google.com/file/d/1ZtwwQorKcxIi1pkNSqkwbBiGHOPFeOQp/view?usp=drive_link)
+For this lesson you will require 2 data sets:
+[Sheffield Rain][shef_csv]
+[India Rain][india_csv]
 
 You don't need to do anything but download them onto your computer before the lesson.
 
@@ -17,3 +17,8 @@ https://students.sheffield.ac.uk/it-services/software/matlab
 
 If MATLAB is not installed on the computer you are using for the session, [MATLAB Online](https://www.mathworks.com/products/matlab-online.html) allows you to use MATLAB in your browser.
 However some UI features will vary slightly.
+
+
+[shef_csv]: data/Sheffield_Rain.csv
+[india_csv]: data/SouthIndia_Rainfall.csv
+
