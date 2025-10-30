@@ -4,7 +4,7 @@ title: Setup
 
 ## Data Sets
 
-For this lesson you will require 2 datasets:
+For this lesson you will require 2 data sets:
 [Sheffield Rain][shef_csv]
 [India Rain][india_csv]
 
