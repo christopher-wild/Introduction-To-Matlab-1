@@ -281,7 +281,7 @@
       </button>
     </div><!--/div.accordion-header-->
 
-    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#for-loops">For Loops</a></li>
 <li><a href="#while-loops">While Loops</a></li>
@@ -405,17 +405,17 @@ iteration. In the exaple below,</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="va">A</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">;</span></span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="kw">for</span> <span class="va">ii</span> <span class="op">=</span> <span class="va">A</span></span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>  <span class="va">disp</span>(<span class="va">ii</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="kw">end</span></span>
-<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>``` <span class="va">OUTPUT</span></span>
-<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="fl">1</span></span>
-<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="fl">2</span></span>
-<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a><span class="fl">3</span></span>
-<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="fl">4</span></span>
-<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a><span class="fl">5</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="va">A</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">;</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="kw">for</span> <span class="va">ii</span> <span class="op">=</span> <span class="va">A</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a>  <span class="va">disp</span>(<span class="va">ii</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1" aria-label="code-block-2-4"></a><span class="kw">end</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1" aria-label="code-block-2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1" aria-label="code-block-2-6"></a>``` <span class="va">OUTPUT</span></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1" aria-label="code-block-2-7"></a><span class="fl">1</span></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1" aria-label="code-block-2-8"></a><span class="fl">2</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1" aria-label="code-block-2-9"></a><span class="fl">3</span></span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1" aria-label="code-block-2-10"></a><span class="fl">4</span></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1" aria-label="code-block-2-11"></a><span class="fl">5</span></span></code></pre>
 </div>
 <p>In this example our <code>values</code> is <code>1:5</code> which if
 you remember from indexing produces a vector
@@ -440,7 +440,7 @@ you remember from indexing produces a vector
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Try creating another variable called total equal to 0, for each
 iteration of the loop add the current index</p>
@@ -455,15 +455,15 @@ counting in steps</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="va">total</span> <span class="op">=</span> <span class="fl">0</span></span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="kw">for</span> <span class="va">ii</span> <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">20</span></span>
-<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>  <span class="va">total</span> <span class="op">=</span> <span class="va">total</span> <span class="op">+</span> <span class="va">ii</span><span class="op">;</span></span>
-<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="kw">end</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="va">total</span> <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a><span class="kw">for</span> <span class="va">ii</span> <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">20</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1" aria-label="code-block-3-3"></a>  <span class="va">total</span> <span class="op">=</span> <span class="va">total</span> <span class="op">+</span> <span class="va">ii</span><span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1" aria-label="code-block-3-4"></a><span class="kw">end</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -475,10 +475,10 @@ condition is being met.</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="va">ii</span> <span class="op">=</span> <span class="fl">0</span></span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="kw">while</span> <span class="va">ii</span> <span class="op">&lt;</span> <span class="fl">10</span></span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>  <span class="va">ii</span> <span class="op">=</span> <span class="va">ii</span> <span class="op">+</span> <span class="fl">1</span><span class="op">;</span></span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="kw">end</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="va">ii</span> <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="kw">while</span> <span class="va">ii</span> <span class="op">&lt;</span> <span class="fl">10</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1" aria-label="code-block-4-3"></a>  <span class="va">ii</span> <span class="op">=</span> <span class="va">ii</span> <span class="op">+</span> <span class="fl">1</span><span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1" aria-label="code-block-4-4"></a><span class="kw">end</span></span></code></pre>
 </div>
 <p>Interestingly, as 1 is logic true in MATLAB, the following loop will
 run until cancelled or MATLAB runs out of resources</p>
@@ -498,10 +498,10 @@ without shutting MATLAB you can press Ctrl+C or on Mac Ctrl+Break</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="va">ii</span> <span class="op">=</span> <span class="fl">0</span></span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="kw">while</span> <span class="fl">1</span></span>
-<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>  <span class="va">ii</span> <span class="op">=</span> <span class="va">ii</span> <span class="op">+</span> <span class="fl">1</span><span class="op">;</span></span>
-<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="kw">end</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="va">ii</span> <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1" aria-label="code-block-5-2"></a><span class="kw">while</span> <span class="fl">1</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1" aria-label="code-block-5-3"></a>  <span class="va">ii</span> <span class="op">=</span> <span class="va">ii</span> <span class="op">+</span> <span class="fl">1</span><span class="op">;</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1" aria-label="code-block-5-4"></a><span class="kw">end</span></span></code></pre>
 </div>
 <p>While loops are useful when you don’t know how many iterations are
 needed. Some common use cases are:</p>
@@ -518,13 +518,13 @@ statement after the loop.</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="kw">for</span> <span class="va">ii</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span></span>
-<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>    <span class="kw">if</span> <span class="va">ii</span> <span class="op">==</span> <span class="fl">5</span></span>
-<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>        <span class="kw">break</span><span class="op">;</span></span>
-<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>    <span class="va">disp</span>(<span class="va">ii</span>)<span class="op">;</span></span>
-<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="kw">end</span></span>
-<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="va">disp</span>(<span class="ss">'Loop finished'</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb6-1"><a href="#cb6-1" tabindex="-1" aria-label="code-block-6-1"></a><span class="kw">for</span> <span class="va">ii</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span></span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1" aria-label="code-block-6-2"></a>    <span class="kw">if</span> <span class="va">ii</span> <span class="op">==</span> <span class="fl">5</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1" aria-label="code-block-6-3"></a>        <span class="kw">break</span><span class="op">;</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1" aria-label="code-block-6-4"></a>    <span class="kw">end</span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1" aria-label="code-block-6-5"></a>    <span class="va">disp</span>(<span class="va">ii</span>)<span class="op">;</span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1" aria-label="code-block-6-6"></a><span class="kw">end</span></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1" aria-label="code-block-6-7"></a><span class="va">disp</span>(<span class="ss">'Loop finished'</span>)<span class="op">;</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -540,12 +540,12 @@ current iteration and jumps to the next iteration of the loop.</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="kw">for</span> <span class="va">ii</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">8</span></span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>    <span class="kw">if</span> <span class="va">mod</span>(<span class="va">ii</span><span class="op">,</span> <span class="fl">2</span>) <span class="op">==</span> <span class="fl">0</span> <span class="co">% Check for even numbers</span></span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>        <span class="kw">continue</span><span class="op">;</span> </span>
-<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a>    <span class="va">disp</span>(<span class="va">ii</span>)<span class="op">;</span></span>
-<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="kw">end</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a><span class="kw">for</span> <span class="va">ii</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">8</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1" aria-label="code-block-8-2"></a>    <span class="kw">if</span> <span class="va">mod</span>(<span class="va">ii</span><span class="op">,</span> <span class="fl">2</span>) <span class="op">==</span> <span class="fl">0</span> <span class="co">% Check for even numbers</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1" aria-label="code-block-8-3"></a>        <span class="kw">continue</span><span class="op">;</span> </span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1" aria-label="code-block-8-4"></a>    <span class="kw">end</span></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1" aria-label="code-block-8-5"></a>    <span class="va">disp</span>(<span class="va">ii</span>)<span class="op">;</span></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1" aria-label="code-block-8-6"></a><span class="kw">end</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -566,13 +566,13 @@ each loop.</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="kw">for</span> <span class="va">ii</span><span class="op">=</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>  <span class="kw">for</span> <span class="va">jj</span><span class="op">=</span><span class="fl">10</span><span class="op">:</span><span class="fl">10</span><span class="op">:</span><span class="fl">30</span></span>
-<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>    <span class="va">ii</span></span>
-<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>    <span class="va">jj</span></span>
-<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>    <span class="va">ii</span><span class="op">*</span><span class="va">jj</span></span>
-<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>  <span class="kw">end</span></span>
-<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a><span class="kw">end</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1" aria-label="code-block-10-1"></a><span class="kw">for</span> <span class="va">ii</span><span class="op">=</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1" aria-label="code-block-10-2"></a>  <span class="kw">for</span> <span class="va">jj</span><span class="op">=</span><span class="fl">10</span><span class="op">:</span><span class="fl">10</span><span class="op">:</span><span class="fl">30</span></span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1" aria-label="code-block-10-3"></a>    <span class="va">ii</span></span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1" aria-label="code-block-10-4"></a>    <span class="va">jj</span></span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1" aria-label="code-block-10-5"></a>    <span class="va">ii</span><span class="op">*</span><span class="va">jj</span></span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1" aria-label="code-block-10-6"></a>  <span class="kw">end</span></span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1" aria-label="code-block-10-7"></a><span class="kw">end</span></span></code></pre>
 </div>
 <div id="callout2" class="callout">
 <div class="callout-square">
@@ -647,7 +647,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.0" class="external-link">sandpaper (0.20.0)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/RSE-Sheffield/uos-varnish/tree/89cda0cb6d55f7bdf482f927c5add3286fd60c46" class="external-link">varnish (1.0.7)</a> [UoS fork]</p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/RSE-Sheffield/uos-varnish/tree/89cda0cb6d55f7bdf482f927c5add3286fd60c46" class="external-link">varnish (1.0.7)</a> [UoS fork]</p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -670,7 +670,7 @@ any links that you are not going to use.
   "identifier": "https://christopher-wild.github.io/Matlab_Course_101/control-statements.html",
   "dateCreated": "2024-09-12",
   "dateModified": "2025-04-28",
-  "datePublished": "2026-04-14"
+  "datePublished": "2026-04-21"
 }
 
   </script><script>

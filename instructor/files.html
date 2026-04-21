@@ -263,7 +263,7 @@
       </button>
     </div><!--/div.accordion-header-->
 
-    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#introduction">Introduction</a></li>
 <li><a href="#understanding-the-working-directory">Understanding the Working Directory</a></li>
@@ -404,7 +404,7 @@ ones.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="va">pwd</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="va">pwd</span></span></code></pre>
 </div>
 <p>This command prints the working directory (hence the name:
 <strong>p</strong>rint <strong>w</strong>orking
@@ -413,7 +413,7 @@ ones.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="va">cd</span>(<span class="ss">'path/to/your/folder'</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="va">cd</span>(<span class="ss">'path/to/your/folder'</span>)</span></code></pre>
 </div>
 <div id="tip-gui-navigation" class="callout">
 <div class="callout-square">
@@ -451,14 +451,14 @@ separate files where Windows use backslashes <code>\</code>.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="va">cd</span>(<span class="ss">'users\myusername\documents'</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="va">cd</span>(<span class="ss">'users\myusername\documents'</span>)</span></code></pre>
 </div>
 </div>
 <div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="va">cd</span>(<span class="ss">'users/myusername/documents'</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="va">cd</span>(<span class="ss">'users/myusername/documents'</span>)</span></code></pre>
 </div>
 </div>
 </div>
@@ -483,7 +483,7 @@ on both file systems, using the <code>filesep</code></p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>[<span class="ss">'users'</span><span class="op">,</span><span class="va">filesep</span><span class="op">,</span><span class="ss">'myusername'</span><span class="op">,</span><span class="va">filesep</span><span class="op">,</span><span class="ss">'documents'</span>]</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a>[<span class="ss">'users'</span><span class="op">,</span><span class="va">filesep</span><span class="op">,</span><span class="ss">'myusername'</span><span class="op">,</span><span class="va">filesep</span><span class="op">,</span><span class="ss">'documents'</span>]</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -495,7 +495,7 @@ on both file systems, using the <code>filesep</code></p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>[<span class="ss">'users'</span><span class="op">,</span><span class="va">filesep</span><span class="op">,</span><span class="ss">'myusername'</span><span class="op">,</span><span class="va">filesep</span><span class="op">,</span><span class="ss">'documents'</span>]</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a>[<span class="ss">'users'</span><span class="op">,</span><span class="va">filesep</span><span class="op">,</span><span class="ss">'myusername'</span><span class="op">,</span><span class="va">filesep</span><span class="op">,</span><span class="ss">'documents'</span>]</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -513,15 +513,15 @@ operating system they are on.</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="va">dir</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a><span class="va">dir</span></span></code></pre>
 </div>
 <p>This will display all files and folders in your working directory.
 You can also list files matching a specific pattern:</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="va">dir</span>(<span class="ss">'*.csv'</span>)  <span class="co">% Lists all CSV files</span></span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="va">dir</span>(<span class="ss">'*.mat'</span>)  <span class="co">% Lists all MATLAB data files</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1" aria-label="code-block-10-1"></a><span class="va">dir</span>(<span class="ss">'*.csv'</span>)  <span class="co">% Lists all CSV files</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1" aria-label="code-block-10-2"></a><span class="va">dir</span>(<span class="ss">'*.mat'</span>)  <span class="co">% Lists all MATLAB data files</span></span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="loading-files">Loading Files<a class="anchor" aria-label="anchor" href="#loading-files"></a></h2>
 <hr class="half-width"><div class="section level3">
@@ -531,7 +531,7 @@ and spreadsheets using <code>readmatrix</code>:</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="va">sheffield_rain</span> <span class="op">=</span> <span class="va">readmatrix</span>(<span class="ss">'Sheffield_Rain.csv'</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb11-1"><a href="#cb11-1" tabindex="-1" aria-label="code-block-11-1"></a><span class="va">sheffield_rain</span> <span class="op">=</span> <span class="va">readmatrix</span>(<span class="ss">'Sheffield_Rain.csv'</span>)</span></code></pre>
 </div>
 </div>
 <div class="section level3">
@@ -543,15 +543,15 @@ next examples</p>
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="va">load</span>(<span class="ss">'rain_data.mat'</span>)  <span class="co">% Loads all variables from the file</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb12-1"><a href="#cb12-1" tabindex="-1" aria-label="code-block-12-1"></a><span class="va">load</span>(<span class="ss">'rain_data.mat'</span>)  <span class="co">% Loads all variables from the file</span></span></code></pre>
 </div>
 <p>You can also load specific variables:</p>
 <div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="va">clear</span></span>
-<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a><span class="va">load</span>(<span class="ss">'rain_data.mat'</span><span class="op">,</span> <span class="ss">'india_data'</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb13-1"><a href="#cb13-1" tabindex="-1" aria-label="code-block-13-1"></a><span class="va">clear</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1" aria-label="code-block-13-2"></a></span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1" aria-label="code-block-13-3"></a><span class="va">load</span>(<span class="ss">'rain_data.mat'</span><span class="op">,</span> <span class="ss">'india_data'</span>)</span></code></pre>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="saving-files">Saving Files<a class="anchor" aria-label="anchor" href="#saving-files"></a></h2>
@@ -564,16 +564,16 @@ your workspace:</p>
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="va">x</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">;</span></span>
-<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="va">y</span> <span class="op">=</span> <span class="va">x</span><span class="op">.^</span><span class="fl">2</span><span class="op">;</span></span>
-<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a><span class="va">save</span>(<span class="ss">'results.mat'</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb14-1"><a href="#cb14-1" tabindex="-1" aria-label="code-block-14-1"></a><span class="va">x</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">;</span></span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1" aria-label="code-block-14-2"></a><span class="va">y</span> <span class="op">=</span> <span class="va">x</span><span class="op">.^</span><span class="fl">2</span><span class="op">;</span></span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1" aria-label="code-block-14-3"></a></span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1" aria-label="code-block-14-4"></a><span class="va">save</span>(<span class="ss">'results.mat'</span>)</span></code></pre>
 </div>
 <p>To save specific variables:</p>
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="va">save</span>(<span class="ss">'results.mat'</span><span class="op">,</span><span class="ss">'x'</span><span class="op">,</span><span class="ss">'y'</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb15-1"><a href="#cb15-1" tabindex="-1" aria-label="code-block-15-1"></a><span class="va">save</span>(<span class="ss">'results.mat'</span><span class="op">,</span><span class="ss">'x'</span><span class="op">,</span><span class="ss">'y'</span>)</span></code></pre>
 </div>
 <div id="when-and-why-use-.mat-files" class="callout">
 <div class="callout-square">
@@ -601,8 +601,8 @@ programs:</p>
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="va">data</span> <span class="op">=</span> [<span class="fl">1</span><span class="op">,</span> <span class="fl">2</span><span class="op">,</span> <span class="fl">3</span><span class="op">;</span> <span class="fl">4</span><span class="op">,</span> <span class="fl">5</span><span class="op">,</span> <span class="fl">6</span><span class="op">;</span> <span class="fl">7</span><span class="op">,</span> <span class="fl">8</span><span class="op">,</span> <span class="fl">9</span>]<span class="op">;</span></span>
-<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a><span class="va">writematrix</span>(<span class="va">data</span><span class="op">,</span><span class="ss">'output.csv'</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb16-1"><a href="#cb16-1" tabindex="-1" aria-label="code-block-16-1"></a><span class="va">data</span> <span class="op">=</span> [<span class="fl">1</span><span class="op">,</span> <span class="fl">2</span><span class="op">,</span> <span class="fl">3</span><span class="op">;</span> <span class="fl">4</span><span class="op">,</span> <span class="fl">5</span><span class="op">,</span> <span class="fl">6</span><span class="op">;</span> <span class="fl">7</span><span class="op">,</span> <span class="fl">8</span><span class="op">,</span> <span class="fl">9</span>]<span class="op">;</span></span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1" aria-label="code-block-16-2"></a><span class="va">writematrix</span>(<span class="va">data</span><span class="op">,</span><span class="ss">'output.csv'</span>)</span></code></pre>
 </div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -670,7 +670,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.0" class="external-link">sandpaper (0.20.0)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/RSE-Sheffield/uos-varnish/tree/89cda0cb6d55f7bdf482f927c5add3286fd60c46" class="external-link">varnish (1.0.7)</a> [UoS fork]</p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/RSE-Sheffield/uos-varnish/tree/89cda0cb6d55f7bdf482f927c5add3286fd60c46" class="external-link">varnish (1.0.7)</a> [UoS fork]</p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -693,7 +693,7 @@ any links that you are not going to use.
   "identifier": "https://christopher-wild.github.io/Matlab_Course_101/instructor/files.html",
   "dateCreated": "2024-09-12",
   "dateModified": "2025-10-30",
-  "datePublished": "2026-04-14"
+  "datePublished": "2026-04-21"
 }
 
   </script><script>

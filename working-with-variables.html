@@ -245,7 +245,7 @@
       </button>
     </div><!--/div.accordion-header-->
 
-    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#introduction">Introduction</a></li>
 <li><a href="#extracting-variables">Extracting Variables</a></li>
@@ -402,7 +402,7 @@ stand-in dataset.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="va">data</span> <span class="op">=</span> <span class="fl">100</span><span class="op">*</span><span class="va">rand</span>(<span class="fl">6</span><span class="op">,</span><span class="fl">4</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="va">data</span> <span class="op">=</span> <span class="fl">100</span><span class="op">*</span><span class="va">rand</span>(<span class="fl">6</span><span class="op">,</span><span class="fl">4</span>)<span class="op">;</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="subsets">Subsets<a class="anchor" aria-label="anchor" href="#subsets"></a></h3>
@@ -412,34 +412,34 @@ with round brackets <code>()</code></p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="va">data</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">2</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="va">data</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">2</span>)</span></code></pre>
 </div>
 <p>We can use colon notation to extract multiple values as well:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co">% Extract columns 1, 2, and 3 on row 3</span></span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="va">data</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="co">% Extract columns 1, 2, and 3 on row 3</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a><span class="va">data</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>)</span></code></pre>
 </div>
 <p>A single colon with no numbers will select all</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="co">% Select all rows in the second column</span></span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="va">data</span>(<span class="op">:,</span><span class="fl">2</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="co">% Select all rows in the second column</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="va">data</span>(<span class="op">:,</span><span class="fl">2</span>)</span></code></pre>
 </div>
 <p>Some more examples bringing together the tools we’ve seen so far:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co">% Extract the first 4 rows and all columns and save it in the variable subset1</span></span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="va">subset1</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">,:</span>) </span>
-<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co">% Select every other column in the first row, save in subset2</span></span>
-<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="va">subset2</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="kw">end</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="co">% Select the first, third and forth rows for all columns, save in subset3</span></span>
-<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="va">subset3</span> <span class="op">=</span> <span class="va">data</span>([<span class="fl">1</span> <span class="fl">3</span> <span class="fl">4</span>]<span class="op">,</span> <span class="op">:</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="co">% Extract the first 4 rows and all columns and save it in the variable subset1</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1" aria-label="code-block-5-2"></a><span class="va">subset1</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">,:</span>) </span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1" aria-label="code-block-5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1" aria-label="code-block-5-4"></a><span class="co">% Select every other column in the first row, save in subset2</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1" aria-label="code-block-5-5"></a><span class="va">subset2</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="kw">end</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1" aria-label="code-block-5-6"></a></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1" aria-label="code-block-5-7"></a><span class="co">% Select the first, third and forth rows for all columns, save in subset3</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1" aria-label="code-block-5-8"></a><span class="va">subset3</span> <span class="op">=</span> <span class="va">data</span>([<span class="fl">1</span> <span class="fl">3</span> <span class="fl">4</span>]<span class="op">,</span> <span class="op">:</span>)</span></code></pre>
 </div>
 <div id="end" class="callout">
 <div class="callout-square">
@@ -464,8 +464,8 @@ value of a variable we simply put it on the left:</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="co">% Set the value on the 3rd row and 2nd column to equal 10</span></span>
-<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="va">data</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">2</span>) <span class="op">=</span> <span class="fl">10</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb6-1"><a href="#cb6-1" tabindex="-1" aria-label="code-block-6-1"></a><span class="co">% Set the value on the 3rd row and 2nd column to equal 10</span></span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1" aria-label="code-block-6-2"></a><span class="va">data</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">2</span>) <span class="op">=</span> <span class="fl">10</span></span></code></pre>
 </div>
 <p>If you look at data in your workspace now you will see that value has
 been changed!</p>
@@ -476,7 +476,7 @@ to show it was invalid.</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="va">data</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">2</span>) <span class="op">=</span> <span class="va">NaN</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a><span class="va">data</span>(<span class="fl">3</span><span class="op">,</span><span class="fl">2</span>) <span class="op">=</span> <span class="va">NaN</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="transpose">Transpose<a class="anchor" aria-label="anchor" href="#transpose"></a></h3>
@@ -487,8 +487,8 @@ by adding an apostrophe <code>'</code> after a variable:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co">% Transpose data and save it as data_t</span></span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="va">data_t</span> <span class="op">=</span> <span class="va">data</span><span class="op">'</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a><span class="co">% Transpose data and save it as data_t</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1" aria-label="code-block-8-2"></a><span class="va">data_t</span> <span class="op">=</span> <span class="va">data</span><span class="op">'</span></span></code></pre>
 </div>
 <p>You should see that data_t has a flipped size compared to data</p>
 </div>
@@ -503,23 +503,23 @@ variable and some subsets of the data to work with.</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a></span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="va">clear</span></span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="va">data</span> <span class="op">=</span> <span class="fl">100</span><span class="op">*</span><span class="va">rand</span>(<span class="fl">6</span><span class="op">,</span><span class="fl">4</span>)<span class="op">;</span></span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a></span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="va">subset1</span> <span class="op">=</span> <span class="va">data</span>(<span class="op">:,</span><span class="fl">1</span>)<span class="op">;</span></span>
-<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="va">subset2</span> <span class="op">=</span> <span class="va">data</span>(<span class="op">:,</span><span class="fl">2</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1" aria-label="code-block-9-2"></a><span class="va">clear</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1" aria-label="code-block-9-3"></a><span class="va">data</span> <span class="op">=</span> <span class="fl">100</span><span class="op">*</span><span class="va">rand</span>(<span class="fl">6</span><span class="op">,</span><span class="fl">4</span>)<span class="op">;</span></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1" aria-label="code-block-9-4"></a></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1" aria-label="code-block-9-5"></a><span class="va">subset1</span> <span class="op">=</span> <span class="va">data</span>(<span class="op">:,</span><span class="fl">1</span>)<span class="op">;</span></span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1" aria-label="code-block-9-6"></a><span class="va">subset2</span> <span class="op">=</span> <span class="va">data</span>(<span class="op">:,</span><span class="fl">2</span>)<span class="op">;</span></span></code></pre>
 </div>
 <p>Both our subsets are column vectors, if we wanted to concatenate them
 together into a larger column vector there are three ways</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="va">new_data</span> <span class="op">=</span> [<span class="va">subset1</span><span class="op">;</span> <span class="va">subset2</span>]</span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="va">new_data</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">subset1</span><span class="op">,</span> <span class="va">subset2</span>)</span>
-<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a></span>
-<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a><span class="va">new_data</span> <span class="op">=</span> <span class="va">vertcat</span>(<span class="va">subset1</span><span class="op">,</span> <span class="va">subset2</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb10-1"><a href="#cb10-1" tabindex="-1" aria-label="code-block-10-1"></a><span class="va">new_data</span> <span class="op">=</span> [<span class="va">subset1</span><span class="op">;</span> <span class="va">subset2</span>]</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1" aria-label="code-block-10-2"></a></span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1" aria-label="code-block-10-3"></a><span class="va">new_data</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">subset1</span><span class="op">,</span> <span class="va">subset2</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1" aria-label="code-block-10-4"></a></span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1" aria-label="code-block-10-5"></a><span class="va">new_data</span> <span class="op">=</span> <span class="va">vertcat</span>(<span class="va">subset1</span><span class="op">,</span> <span class="va">subset2</span>)</span></code></pre>
 </div>
 <p>All <code>[;]</code>, <code>cat</code>, and <code>vertcat</code> are
 all different ways to do the same vertical concatenation.</p>
@@ -541,12 +541,12 @@ columns we could do</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a></span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="va">new_data2</span> <span class="op">=</span> [<span class="va">subset1</span> <span class="va">subset2</span>]</span>
-<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="va">new_data2</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">2</span><span class="op">,</span><span class="va">subset1</span><span class="op">,</span><span class="va">subset2</span>)</span>
-<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a></span>
-<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a><span class="va">new_data2</span> <span class="op">=</span> <span class="va">horzcat</span>(<span class="va">subset1</span><span class="op">,</span><span class="va">subset2</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb11-1"><a href="#cb11-1" tabindex="-1" aria-label="code-block-11-1"></a></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1" aria-label="code-block-11-2"></a><span class="va">new_data2</span> <span class="op">=</span> [<span class="va">subset1</span> <span class="va">subset2</span>]</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1" aria-label="code-block-11-3"></a></span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1" aria-label="code-block-11-4"></a><span class="va">new_data2</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">2</span><span class="op">,</span><span class="va">subset1</span><span class="op">,</span><span class="va">subset2</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1" aria-label="code-block-11-5"></a></span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1" aria-label="code-block-11-6"></a><span class="va">new_data2</span> <span class="op">=</span> <span class="va">horzcat</span>(<span class="va">subset1</span><span class="op">,</span><span class="va">subset2</span>)</span></code></pre>
 </div>
 <p>One advantage of using <code>cat</code> is that it can work for
 arrays of larger dimensions, whereas the square bracket shortcut,
@@ -581,17 +581,17 @@ the first dimension</p></li>
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="co">% Extract every other row from Data assign it to the varibale name subset_a</span></span>
-<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="va">subset_a</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">6</span><span class="op">,:</span>)</span>
-<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a><span class="co">% Extract the first four rows from the 2nd column of Data and call it subset_b</span></span>
-<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="va">subset_b</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">,</span><span class="fl">2</span>)</span>
-<span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a></span>
-<span id="cb12-7"><a href="#cb12-7" tabindex="-1"></a><span class="co">% Transpose subset_b, call this varibale subset_t </span></span>
-<span id="cb12-8"><a href="#cb12-8" tabindex="-1"></a><span class="va">subset_t</span> <span class="op">=</span> <span class="va">subset_b</span><span class="op">'</span></span>
-<span id="cb12-9"><a href="#cb12-9" tabindex="-1"></a></span>
-<span id="cb12-10"><a href="#cb12-10" tabindex="-1"></a><span class="co">% Concatenate subset_a and subset_t along the first dimension</span></span>
-<span id="cb12-11"><a href="#cb12-11" tabindex="-1"></a><span class="va">subset_concatenated</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">subset_a</span><span class="op">,</span> <span class="va">subset_t</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb12-1"><a href="#cb12-1" tabindex="-1" aria-label="code-block-12-1"></a><span class="co">% Extract every other row from Data assign it to the varibale name subset_a</span></span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1" aria-label="code-block-12-2"></a><span class="va">subset_a</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">:</span><span class="fl">6</span><span class="op">,:</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1" aria-label="code-block-12-3"></a></span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1" aria-label="code-block-12-4"></a><span class="co">% Extract the first four rows from the 2nd column of Data and call it subset_b</span></span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1" aria-label="code-block-12-5"></a><span class="va">subset_b</span> <span class="op">=</span> <span class="va">data</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">,</span><span class="fl">2</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" tabindex="-1" aria-label="code-block-12-6"></a></span>
+<span id="cb12-7"><a href="#cb12-7" tabindex="-1" aria-label="code-block-12-7"></a><span class="co">% Transpose subset_b, call this varibale subset_t </span></span>
+<span id="cb12-8"><a href="#cb12-8" tabindex="-1" aria-label="code-block-12-8"></a><span class="va">subset_t</span> <span class="op">=</span> <span class="va">subset_b</span><span class="op">'</span></span>
+<span id="cb12-9"><a href="#cb12-9" tabindex="-1" aria-label="code-block-12-9"></a></span>
+<span id="cb12-10"><a href="#cb12-10" tabindex="-1" aria-label="code-block-12-10"></a><span class="co">% Concatenate subset_a and subset_t along the first dimension</span></span>
+<span id="cb12-11"><a href="#cb12-11" tabindex="-1" aria-label="code-block-12-11"></a><span class="va">subset_concatenated</span> <span class="op">=</span> <span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">subset_a</span><span class="op">,</span> <span class="va">subset_t</span>)</span></code></pre>
 </div>
 <p><code>subset_concatenated</code> should be of size 4x4</p>
 </div>
@@ -609,11 +609,11 @@ round each data point to the nearest whole number with the function
 <div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="va">clear</span></span>
-<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="va">data</span> <span class="op">=</span> <span class="fl">100</span> <span class="op">*</span> <span class="va">rand</span>(<span class="fl">10</span><span class="op">,</span><span class="fl">10</span>)</span>
-<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a><span class="co">% Round to nearest whole number and overwrite data variable</span></span>
-<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a><span class="va">data</span> <span class="op">=</span> <span class="va">round</span>(<span class="va">data</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb13-1"><a href="#cb13-1" tabindex="-1" aria-label="code-block-13-1"></a><span class="va">clear</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1" aria-label="code-block-13-2"></a><span class="va">data</span> <span class="op">=</span> <span class="fl">100</span> <span class="op">*</span> <span class="va">rand</span>(<span class="fl">10</span><span class="op">,</span><span class="fl">10</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1" aria-label="code-block-13-3"></a></span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1" aria-label="code-block-13-4"></a><span class="co">% Round to nearest whole number and overwrite data variable</span></span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1" aria-label="code-block-13-5"></a><span class="va">data</span> <span class="op">=</span> <span class="va">round</span>(<span class="va">data</span>)</span></code></pre>
 </div>
 <p>You may be familiar with the syntax (syntax is a word typically used
 in programming to mean format) of the most basic operators from other
@@ -621,11 +621,11 @@ computer programs.</p>
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a></span>
-<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="va">data_add</span> <span class="op">=</span> <span class="va">data</span> <span class="op">+</span> <span class="fl">10</span><span class="op">;</span></span>
-<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a><span class="va">data_subtract</span> <span class="op">=</span> <span class="va">data</span> <span class="op">-</span> <span class="fl">10</span><span class="op">;</span></span>
-<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a><span class="va">data_divide</span> <span class="op">=</span> <span class="va">data</span> <span class="op">/</span> <span class="fl">10</span><span class="op">;</span></span>
-<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a><span class="va">data_multiply</span> <span class="op">=</span> <span class="va">data</span> <span class="op">*</span> <span class="fl">10</span><span class="op">;</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb14-1"><a href="#cb14-1" tabindex="-1" aria-label="code-block-14-1"></a></span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1" aria-label="code-block-14-2"></a><span class="va">data_add</span> <span class="op">=</span> <span class="va">data</span> <span class="op">+</span> <span class="fl">10</span><span class="op">;</span></span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1" aria-label="code-block-14-3"></a><span class="va">data_subtract</span> <span class="op">=</span> <span class="va">data</span> <span class="op">-</span> <span class="fl">10</span><span class="op">;</span></span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1" aria-label="code-block-14-4"></a><span class="va">data_divide</span> <span class="op">=</span> <span class="va">data</span> <span class="op">/</span> <span class="fl">10</span><span class="op">;</span></span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1" aria-label="code-block-14-5"></a><span class="va">data_multiply</span> <span class="op">=</span> <span class="va">data</span> <span class="op">*</span> <span class="fl">10</span><span class="op">;</span></span></code></pre>
 </div>
 <p>One common mistake made by users of MATLAB is with the multiply
 operator. When multiplying pay attention to make sure you are getting
@@ -659,10 +659,10 @@ the result you expect!</p>
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a></span>
-<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a><span class="va">row</span> <span class="op">=</span> [<span class="fl">1</span> <span class="fl">2</span> <span class="fl">3</span>]<span class="op">;</span></span>
-<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a><span class="va">column</span> <span class="op">=</span> [<span class="fl">4</span><span class="op">;</span> <span class="fl">5</span><span class="op">;</span> <span class="fl">6</span>]<span class="op">;</span></span>
-<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a><span class="va">row</span> <span class="op">*</span> <span class="va">column</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb15-1"><a href="#cb15-1" tabindex="-1" aria-label="code-block-15-1"></a></span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1" aria-label="code-block-15-2"></a><span class="va">row</span> <span class="op">=</span> [<span class="fl">1</span> <span class="fl">2</span> <span class="fl">3</span>]<span class="op">;</span></span>
+<span id="cb15-3"><a href="#cb15-3" tabindex="-1" aria-label="code-block-15-3"></a><span class="va">column</span> <span class="op">=</span> [<span class="fl">4</span><span class="op">;</span> <span class="fl">5</span><span class="op">;</span> <span class="fl">6</span>]<span class="op">;</span></span>
+<span id="cb15-4"><a href="#cb15-4" tabindex="-1" aria-label="code-block-15-4"></a><span class="va">row</span> <span class="op">*</span> <span class="va">column</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -687,9 +687,9 @@ multiplication</a>.</p>
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a></span>
-<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a><span class="va">row2</span> <span class="op">=</span> [<span class="fl">4</span> <span class="fl">5</span> <span class="fl">6</span>]<span class="op">;</span></span>
-<span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a><span class="va">row</span><span class="op">.*</span><span class="va">row2</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb17-1"><a href="#cb17-1" tabindex="-1" aria-label="code-block-17-1"></a></span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1" aria-label="code-block-17-2"></a><span class="va">row2</span> <span class="op">=</span> [<span class="fl">4</span> <span class="fl">5</span> <span class="fl">6</span>]<span class="op">;</span></span>
+<span id="cb17-3"><a href="#cb17-3" tabindex="-1" aria-label="code-block-17-3"></a><span class="va">row</span><span class="op">.*</span><span class="va">row2</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -707,24 +707,24 @@ data analysis and processing</p>
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a></span>
-<span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a><span class="co">% Find the size of a matrix</span></span>
-<span id="cb19-3"><a href="#cb19-3" tabindex="-1"></a><span class="va">matrix_size</span> <span class="op">=</span> <span class="va">size</span>(<span class="va">data</span>)</span>
-<span id="cb19-4"><a href="#cb19-4" tabindex="-1"></a></span>
-<span id="cb19-5"><a href="#cb19-5" tabindex="-1"></a><span class="co">% Add together the rows in each column</span></span>
-<span id="cb19-6"><a href="#cb19-6" tabindex="-1"></a><span class="va">column_totals</span> <span class="op">=</span> <span class="va">sum</span>(<span class="va">data</span><span class="op">,</span> <span class="fl">1</span>)</span>
-<span id="cb19-7"><a href="#cb19-7" tabindex="-1"></a></span>
-<span id="cb19-8"><a href="#cb19-8" tabindex="-1"></a><span class="co">% Take the mean of the rows in each row</span></span>
-<span id="cb19-9"><a href="#cb19-9" tabindex="-1"></a><span class="va">row_means</span> <span class="op">=</span> <span class="va">mean</span>(<span class="va">data</span><span class="op">,</span> <span class="fl">2</span>)</span>
-<span id="cb19-10"><a href="#cb19-10" tabindex="-1"></a></span>
-<span id="cb19-11"><a href="#cb19-11" tabindex="-1"></a><span class="co">% Find the maximum value in each column</span></span>
-<span id="cb19-12"><a href="#cb19-12" tabindex="-1"></a><span class="va">data_max</span> <span class="op">=</span> <span class="va">max</span>(<span class="va">data</span>)</span>
-<span id="cb19-13"><a href="#cb19-13" tabindex="-1"></a></span>
-<span id="cb19-14"><a href="#cb19-14" tabindex="-1"></a><span class="co">% Find the minimum value in each row</span></span>
-<span id="cb19-15"><a href="#cb19-15" tabindex="-1"></a><span class="va">data_min</span> <span class="op">=</span> <span class="va">min</span>(<span class="va">data</span><span class="op">,</span> []<span class="op">,</span> <span class="fl">2</span>)</span>
-<span id="cb19-16"><a href="#cb19-16" tabindex="-1"></a></span>
-<span id="cb19-17"><a href="#cb19-17" tabindex="-1"></a><span class="co">% Find the maximum value of the entire matrix</span></span>
-<span id="cb19-18"><a href="#cb19-18" tabindex="-1"></a><span class="va">data_max_all</span> <span class="op">=</span> <span class="va">max</span>(<span class="va">data</span><span class="op">,</span> []<span class="op">,</span> <span class="st">"all"</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb19-1"><a href="#cb19-1" tabindex="-1" aria-label="code-block-19-1"></a></span>
+<span id="cb19-2"><a href="#cb19-2" tabindex="-1" aria-label="code-block-19-2"></a><span class="co">% Find the size of a matrix</span></span>
+<span id="cb19-3"><a href="#cb19-3" tabindex="-1" aria-label="code-block-19-3"></a><span class="va">matrix_size</span> <span class="op">=</span> <span class="va">size</span>(<span class="va">data</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" tabindex="-1" aria-label="code-block-19-4"></a></span>
+<span id="cb19-5"><a href="#cb19-5" tabindex="-1" aria-label="code-block-19-5"></a><span class="co">% Add together the rows in each column</span></span>
+<span id="cb19-6"><a href="#cb19-6" tabindex="-1" aria-label="code-block-19-6"></a><span class="va">column_totals</span> <span class="op">=</span> <span class="va">sum</span>(<span class="va">data</span><span class="op">,</span> <span class="fl">1</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" tabindex="-1" aria-label="code-block-19-7"></a></span>
+<span id="cb19-8"><a href="#cb19-8" tabindex="-1" aria-label="code-block-19-8"></a><span class="co">% Take the mean of the rows in each row</span></span>
+<span id="cb19-9"><a href="#cb19-9" tabindex="-1" aria-label="code-block-19-9"></a><span class="va">row_means</span> <span class="op">=</span> <span class="va">mean</span>(<span class="va">data</span><span class="op">,</span> <span class="fl">2</span>)</span>
+<span id="cb19-10"><a href="#cb19-10" tabindex="-1" aria-label="code-block-19-10"></a></span>
+<span id="cb19-11"><a href="#cb19-11" tabindex="-1" aria-label="code-block-19-11"></a><span class="co">% Find the maximum value in each column</span></span>
+<span id="cb19-12"><a href="#cb19-12" tabindex="-1" aria-label="code-block-19-12"></a><span class="va">data_max</span> <span class="op">=</span> <span class="va">max</span>(<span class="va">data</span>)</span>
+<span id="cb19-13"><a href="#cb19-13" tabindex="-1" aria-label="code-block-19-13"></a></span>
+<span id="cb19-14"><a href="#cb19-14" tabindex="-1" aria-label="code-block-19-14"></a><span class="co">% Find the minimum value in each row</span></span>
+<span id="cb19-15"><a href="#cb19-15" tabindex="-1" aria-label="code-block-19-15"></a><span class="va">data_min</span> <span class="op">=</span> <span class="va">min</span>(<span class="va">data</span><span class="op">,</span> []<span class="op">,</span> <span class="fl">2</span>)</span>
+<span id="cb19-16"><a href="#cb19-16" tabindex="-1" aria-label="code-block-19-16"></a></span>
+<span id="cb19-17"><a href="#cb19-17" tabindex="-1" aria-label="code-block-19-17"></a><span class="co">% Find the maximum value of the entire matrix</span></span>
+<span id="cb19-18"><a href="#cb19-18" tabindex="-1" aria-label="code-block-19-18"></a><span class="va">data_max_all</span> <span class="op">=</span> <span class="va">max</span>(<span class="va">data</span><span class="op">,</span> []<span class="op">,</span> <span class="st">"all"</span>)</span></code></pre>
 </div>
 
 </section><section><h2 class="section-heading" id="indian-rainfall-example">Indian Rainfall Example<a class="anchor" aria-label="anchor" href="#indian-rainfall-example"></a></h2>
@@ -737,9 +737,9 @@ Peninsular India (<a href="https://www.tropmet.res.in/DataArchival-51-Page" clas
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="co">% Import rainfall data. </span></span>
-<span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a><span class="va">sheffield_data</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'Sheffield_Rain.csv'</span>)<span class="op">;</span></span>
-<span id="cb20-3"><a href="#cb20-3" tabindex="-1"></a><span class="va">india_data</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'SouthIndia_Rainfall.csv'</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb20-1"><a href="#cb20-1" tabindex="-1" aria-label="code-block-20-1"></a><span class="co">% Import rainfall data. </span></span>
+<span id="cb20-2"><a href="#cb20-2" tabindex="-1" aria-label="code-block-20-2"></a><span class="va">sheffield_data</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'Sheffield_Rain.csv'</span>)<span class="op">;</span></span>
+<span id="cb20-3"><a href="#cb20-3" tabindex="-1" aria-label="code-block-20-3"></a><span class="va">india_data</span> <span class="op">=</span> <span class="va">load</span>(<span class="ss">'SouthIndia_Rainfall.csv'</span>)<span class="op">;</span></span></code></pre>
 </div>
 <div id="challenge3" class="callout challenge">
 <div class="callout-square">
@@ -796,16 +796,16 @@ rainfall over the 114 years. Call these new variables
 <div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="co">% Select all data except the first column</span></span>
-<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a><span class="va">sheffield_rain</span> <span class="op">=</span> <span class="va">sheffield_data</span>(<span class="op">:,</span><span class="fl">2</span><span class="op">:</span><span class="kw">end</span>)<span class="op">;</span></span>
-<span id="cb21-3"><a href="#cb21-3" tabindex="-1"></a><span class="va">india_rain</span> <span class="op">=</span> <span class="va">india_data</span>(<span class="op">:,</span><span class="fl">2</span><span class="op">:</span><span class="kw">end</span>)<span class="op">;</span> </span>
-<span id="cb21-4"><a href="#cb21-4" tabindex="-1"></a></span>
-<span id="cb21-5"><a href="#cb21-5" tabindex="-1"></a><span class="co">% Convert india_rain to millimeters</span></span>
-<span id="cb21-6"><a href="#cb21-6" tabindex="-1"></a><span class="va">india_rain</span> <span class="op">=</span> <span class="va">india_rain</span><span class="op">/</span><span class="fl">10</span><span class="op">;</span></span>
-<span id="cb21-7"><a href="#cb21-7" tabindex="-1"></a></span>
-<span id="cb21-8"><a href="#cb21-8" tabindex="-1"></a><span class="co">% Take the mean of each column to find the average monthly rainfall</span></span>
-<span id="cb21-9"><a href="#cb21-9" tabindex="-1"></a><span class="va">sheffield_monthly</span> <span class="op">=</span> <span class="va">mean</span>(<span class="va">sheffield_rain</span><span class="op">,</span> <span class="fl">1</span>)<span class="op">;</span></span>
-<span id="cb21-10"><a href="#cb21-10" tabindex="-1"></a><span class="va">india_monthly</span> <span class="op">=</span> <span class="va">mean</span>(<span class="va">india_rain</span><span class="op">,</span> <span class="fl">1</span>)<span class="op">;</span></span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb21-1"><a href="#cb21-1" tabindex="-1" aria-label="code-block-21-1"></a><span class="co">% Select all data except the first column</span></span>
+<span id="cb21-2"><a href="#cb21-2" tabindex="-1" aria-label="code-block-21-2"></a><span class="va">sheffield_rain</span> <span class="op">=</span> <span class="va">sheffield_data</span>(<span class="op">:,</span><span class="fl">2</span><span class="op">:</span><span class="kw">end</span>)<span class="op">;</span></span>
+<span id="cb21-3"><a href="#cb21-3" tabindex="-1" aria-label="code-block-21-3"></a><span class="va">india_rain</span> <span class="op">=</span> <span class="va">india_data</span>(<span class="op">:,</span><span class="fl">2</span><span class="op">:</span><span class="kw">end</span>)<span class="op">;</span> </span>
+<span id="cb21-4"><a href="#cb21-4" tabindex="-1" aria-label="code-block-21-4"></a></span>
+<span id="cb21-5"><a href="#cb21-5" tabindex="-1" aria-label="code-block-21-5"></a><span class="co">% Convert india_rain to millimeters</span></span>
+<span id="cb21-6"><a href="#cb21-6" tabindex="-1" aria-label="code-block-21-6"></a><span class="va">india_rain</span> <span class="op">=</span> <span class="va">india_rain</span><span class="op">/</span><span class="fl">10</span><span class="op">;</span></span>
+<span id="cb21-7"><a href="#cb21-7" tabindex="-1" aria-label="code-block-21-7"></a></span>
+<span id="cb21-8"><a href="#cb21-8" tabindex="-1" aria-label="code-block-21-8"></a><span class="co">% Take the mean of each column to find the average monthly rainfall</span></span>
+<span id="cb21-9"><a href="#cb21-9" tabindex="-1" aria-label="code-block-21-9"></a><span class="va">sheffield_monthly</span> <span class="op">=</span> <span class="va">mean</span>(<span class="va">sheffield_rain</span><span class="op">,</span> <span class="fl">1</span>)<span class="op">;</span></span>
+<span id="cb21-10"><a href="#cb21-10" tabindex="-1" aria-label="code-block-21-10"></a><span class="va">india_monthly</span> <span class="op">=</span> <span class="va">mean</span>(<span class="va">india_rain</span><span class="op">,</span> <span class="fl">1</span>)<span class="op">;</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -817,9 +817,9 @@ code to generate a bar chart comparing the two average rainfalls.</p>
 <div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">MATLAB<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="va">bar</span>([<span class="fl">1</span><span class="op">:</span><span class="fl">12</span>]<span class="op">,</span><span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">india_monthly</span><span class="op">,</span> <span class="va">sheffield_monthly</span>)<span class="op">,</span><span class="ss">'grouped'</span>)</span>
-<span id="cb22-2"><a href="#cb22-2" tabindex="-1"></a><span class="va">legend</span>(<span class="ss">'South India'</span><span class="op">,</span> <span class="ss">'Sheffield'</span>)</span>
-<span id="cb22-3"><a href="#cb22-3" tabindex="-1"></a><span class="va">ylabel</span>(<span class="ss">'Rainfall (mm)'</span>)</span></code></pre>
+<pre class="sourceCode matlab" tabindex="0"><code class="sourceCode matlab"><span id="cb22-1"><a href="#cb22-1" tabindex="-1" aria-label="code-block-22-1"></a><span class="va">bar</span>([<span class="fl">1</span><span class="op">:</span><span class="fl">12</span>]<span class="op">,</span><span class="va">cat</span>(<span class="fl">1</span><span class="op">,</span> <span class="va">india_monthly</span><span class="op">,</span> <span class="va">sheffield_monthly</span>)<span class="op">,</span><span class="ss">'grouped'</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" tabindex="-1" aria-label="code-block-22-2"></a><span class="va">legend</span>(<span class="ss">'South India'</span><span class="op">,</span> <span class="ss">'Sheffield'</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" tabindex="-1" aria-label="code-block-22-3"></a><span class="va">ylabel</span>(<span class="ss">'Rainfall (mm)'</span>)</span></code></pre>
 </div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -881,7 +881,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.0" class="external-link">sandpaper (0.20.0)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/RSE-Sheffield/uos-varnish/tree/89cda0cb6d55f7bdf482f927c5add3286fd60c46" class="external-link">varnish (1.0.7)</a> [UoS fork]</p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/RSE-Sheffield/uos-varnish/tree/89cda0cb6d55f7bdf482f927c5add3286fd60c46" class="external-link">varnish (1.0.7)</a> [UoS fork]</p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -904,7 +904,7 @@ any links that you are not going to use.
   "identifier": "https://christopher-wild.github.io/Matlab_Course_101/working-with-variables.html",
   "dateCreated": "2024-09-12",
   "dateModified": "2025-10-23",
-  "datePublished": "2026-04-14"
+  "datePublished": "2026-04-21"
 }
 
   </script><script>
